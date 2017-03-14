@@ -3,14 +3,16 @@ package com.wayto.android.function.batteryFuncation.data;
 import java.io.Serializable;
 
 /**
- * @author hezhiWu
- * @version V1.0
- * @Package com.yunwei.water.ui.activity.data
- * @Description:电量上传实体类
- * @date 2016/12/27 9:09
+ * 电量上传实体类
+ * <p>
+ * author: hezhiWu <wuhezhi007@gmail.com>
+ * version: V1.0
+ * created at 2017/3/14 10:40
+ * <p>
+ * Copyright (c) 2017 Shenzhen O&M Cloud Co., Ltd. All rights reserved.
  */
 
-public class BatteryEntity implements Serializable{
+public class BatteryEntity implements Serializable {
 
     private int Id;
     private int Value;

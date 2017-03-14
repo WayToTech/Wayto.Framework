@@ -7,17 +7,17 @@ import android.graphics.Paint;
 import android.view.View;
 
 /**
- * @Package: com.yunwei.map.widget
- * @Description:
- * @author: Aaron
- * @date: 2016-06-30
- * @Time: 15:33
- * @version: V1.0
+ * author: hezhiWu <wuhezhi007@gmail.com>
+ * version: V1.0
+ * created at 2017/3/14 10:46
+ * <p>
+ * Copyright (c) 2017 Shenzhen O&M Cloud Co., Ltd. All rights reserved.
  */
 public class CircleView extends View {
 
-    private float x=10,y=10;
-    public CircleView(Context context){
+    private float x = 10, y = 10;
+
+    public CircleView(Context context) {
         super(context);
     }
 
@@ -25,17 +25,17 @@ public class CircleView extends View {
     protected void onDraw(Canvas canvas) {
         super.onDraw(canvas);
 
-        Paint paint=new Paint();
+        Paint paint = new Paint();
         paint.setColor(Color.RED);
 
-        canvas.drawCircle(120, 20, 20,paint);
+        canvas.drawCircle(120, 20, 20, paint);
     }
 
-    public void setCircleX(float x){
-        this.x=x;
+    public void setCircleX(float x) {
+        this.x = x;
     }
 
-    public void setCircleY(float y){
-        this.y=y;
+    public void setCircleY(float y) {
+        this.y = y;
     }
 }

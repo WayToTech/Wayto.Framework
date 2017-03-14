@@ -12,12 +12,14 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * @author hezhiWu
- * @version V1.0
- * @Package com.yunwei.frame.function.mainFuncations.recordFuncation
- * @Description:设施采集历史记录
- * @date 2016/12/7 14:15
- */
+ * 设施采集历史记录
+ * 
+ * author: hezhiWu <wuhezhi007@gmail.com>
+ * version: V1.0
+ * created at 2017/3/14 10:34
+ * <p>
+ * Copyright (c) 2017 Shenzhen O&M Cloud Co., Ltd. All rights reserved.
+*/
 
 public class DeviceRecordFragment extends RecordBaseFragment {
 

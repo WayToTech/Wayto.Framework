@@ -5,11 +5,13 @@ import android.app.Activity;
 import com.wayto.android.function.accountFuncation.data.UserInfoEntity;
 
 /**
- * @author hezhiWu
- * @version V1.0
- * @Package com.yunwei.android.function.account
- * @Description:定义协议
- * @date 2016/11/29 14:54
+ * 定义协议
+ * <p>
+ * author: hezhiWu <wuhezhi007@gmail.com>
+ * version: V1.0
+ * created at 2017/3/14 10:41
+ * <p>
+ * Copyright (c) 2017 Shenzhen O&M Cloud Co., Ltd. All rights reserved.
  */
 
 public interface AccountContract {

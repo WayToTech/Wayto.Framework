@@ -25,13 +25,14 @@ import com.wayto.map.utils.ILngLatMercator;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
-
 /**
- * @author hezhiWu
- * @version V1.0
- * @Package com.yunwei.frame.function.mapFuncation
- * @Description:地图选点
- * @date 2017/2/20 16:53
+ * 地图选点
+ * <p>
+ * author: hezhiWu <wuhezhi007@gmail.com>
+ * version: V1.0
+ * created at 2017/3/14 10:32
+ * <p>
+ * Copyright (c) 2017 Shenzhen O&M Cloud Co., Ltd. All rights reserved.
  */
 
 public class MapSelectePointActivity extends BaseActivity implements OnStatusChangedListener, OnPanListener, RegeoContract.View, ArcGisBaseMapView.MapViewClickListener {

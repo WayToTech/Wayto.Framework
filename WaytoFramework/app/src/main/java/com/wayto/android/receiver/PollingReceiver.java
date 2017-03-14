@@ -12,11 +12,13 @@ import com.wayto.android.utils.IUtil;
 import com.wayto.android.vendor.baiduTTS.BaiduTTSUtils;
 
 /**
- * @author hezhiWu
- * @version V1.0
- * @Package com.yunwei.frame.receiver
- * @Description:轮询监听
- * @date 2017/1/13 14:00
+ * 轮询监听
+ * <p>
+ * author: hezhiWu <wuhezhi007@gmail.com>
+ * version: V1.0
+ * created at 2017/3/14 10:22
+ * <p>
+ * Copyright (c) 2017 Shenzhen O&M Cloud Co., Ltd. All rights reserved.
  */
 
 public class PollingReceiver extends BroadcastReceiver {

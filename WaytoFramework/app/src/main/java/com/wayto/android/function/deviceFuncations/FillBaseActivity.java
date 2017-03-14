@@ -10,11 +10,13 @@ import com.wayto.android.R;
 import com.wayto.android.base.BaseActivity;
 
 /**
- * @author hezhiWu
- * @version V1.0
- * @Package com.yunwei.frame.function.deviceFuncations
- * @Description:上报的BaseActivity
- * @date 2017/2/20 14:31
+ * 上报的BaseActivity
+ * <p>
+ * author: hezhiWu <wuhezhi007@gmail.com>
+ * version: V1.0
+ * created at 2017/3/14 10:39
+ * <p>
+ * Copyright (c) 2017 Shenzhen O&M Cloud Co., Ltd. All rights reserved.
  */
 
 public abstract class FillBaseActivity extends BaseActivity {

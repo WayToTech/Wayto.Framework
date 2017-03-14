@@ -1,14 +1,16 @@
 package com.wayto.android.entity;
 
 /**
- * @author hezhiWu
- * @version V1.0
- * @Package com.yunwei.frame.entity
- * @Description:
- * @date 2017/2/22 15:06
+ * 上传图片实体
+ * <p>
+ * author: hezhiWu <wuhezhi007@gmail.com>
+ * version: V1.0
+ * created at 2017/3/14 10:08
+ * <p>
+ * Copyright (c) 2017 Shenzhen O&M Cloud Co., Ltd. All rights reserved.
  */
 
-public class Image {
+public class ImageEntity {
     private String Url;
     private String key;
 

@@ -3,13 +3,12 @@ package com.wayto.android.function.mainFuncations.mineModule.CheckAppVersion;
 import android.app.Activity;
 
 /**
- * @author hezhiWu
- * @version V1.0
- * @Package com.yunwei.cmcc.ui.mainFunctions.mineModule
- * @Description:
- * @date 2016/11/17 11:09
+ * author: hezhiWu <wuhezhi007@gmail.com>
+ * version: V1.0
+ * created at 2017/3/14 10:37
+ * <p>
+ * Copyright (c) 2017 Shenzhen O&M Cloud Co., Ltd. All rights reserved.
  */
-
 public interface CheckAppVersionContract {
 
     interface View {

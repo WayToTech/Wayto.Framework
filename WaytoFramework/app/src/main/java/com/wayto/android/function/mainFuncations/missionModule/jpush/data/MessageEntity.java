@@ -3,13 +3,12 @@ package com.wayto.android.function.mainFuncations.missionModule.jpush.data;
 import java.util.ArrayList;
 
 /**
- * @author hezhiWu
- * @version V1.0
- * @Package com.yunwei.frame.function.mainFuncations.missionModule.jpush.data
- * @Description:
- * @date 2017/2/10 16:48
+ * author: hezhiWu <wuhezhi007@gmail.com>
+ * version: V1.0
+ * created at 2017/3/14 10:36
+ * <p>
+ * Copyright (c) 2017 Shenzhen O&M Cloud Co., Ltd. All rights reserved.
  */
-
 public class MessageEntity {
 
     int code;

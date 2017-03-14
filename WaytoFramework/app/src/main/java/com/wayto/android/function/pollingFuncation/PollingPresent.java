@@ -12,13 +12,14 @@ import com.wayto.android.utils.NotificationUtil;
 import java.util.List;
 
 /**
- * @author hezhiWu
- * @version V1.0
- * @Package com.yunwei.frame.function.pollingFuncation
- * @Description:轮询Present
- * @date 2017/1/20 16:32
+ * 轮询Present
+ * <p>
+ * author: hezhiWu <wuhezhi007@gmail.com>
+ * version: V1.0
+ * created at 2017/3/14 10:28
+ * <p>
+ * Copyright (c) 2017 Shenzhen O&M Cloud Co., Ltd. All rights reserved.
  */
-
 public class PollingPresent implements PollingContract.Presenter, PollingDataSource.InsertWorkRecordCallBack, PollingDataSource.QueryUploadTaskListCallBack, PollingDataSource.UploadTaskCallBack, PollingDataSource.QueryWorkRecordCallBack {
 
     private PollingRemoteRepo remoteRepo;
@@ -85,7 +86,7 @@ public class PollingPresent implements PollingContract.Presenter, PollingDataSou
 
     @Override
     public void queryUploadTaskList() {
-          remoteRepo.queryUploadTaskList(this);
+        remoteRepo.queryUploadTaskList(this);
     }
 
     @Override

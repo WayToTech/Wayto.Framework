@@ -15,11 +15,13 @@ import org.greenrobot.eventbus.Subscribe;
 import org.greenrobot.eventbus.ThreadMode;
 
 /**
- * @author hezhiWu
- * @version V1.0
- * @Package com.yunwei.frame.base
- * @Description:基类Fragment
- * @date 2016/11/22 14:57
+ * 基类Fragment
+ * <p>
+ * author: hezhiWu <wuhezhi007@gmail.com>
+ * version: V1.0
+ * created at 2017/3/14 10:12
+ * <p>
+ * Copyright (c) 2017 Shenzhen O&M Cloud Co., Ltd. All rights reserved.
  */
 
 public class BaseFragment extends Fragment {
@@ -83,13 +85,23 @@ public class BaseFragment extends Fragment {
         ToastUtil.showToast(getActivity(), msg);
     }
 
+    /**
+     * 子线程回调
+     *
+     * @param event
+     */
     @Subscribe(threadMode = ThreadMode.BACKGROUND)
-    public void onBackGroundUserEvent(NoticeEvent event) {
+    public void onSubThreedEvent(NoticeEvent event) {
 
     }
 
+    /**
+     * 主线程回调
+     *
+     * @param event
+     */
     @Subscribe(threadMode = ThreadMode.MAIN)
-    public void onMainUserEvent(NoticeEvent event) {
+    public void onMainThreedEvent(NoticeEvent event) {
 
     }
 }

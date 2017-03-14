@@ -10,7 +10,12 @@ import java.util.Date;
 
 /**
  * 配置信息
- * Created by yangdu on 16/6/8.
+ * <p>
+ * author: hezhiWu <wuhezhi007@gmail.com>
+ * version: V1.0
+ * created at 2017/3/14 10:42
+ * <p>
+ * Copyright (c) 2017 Shenzhen O&M Cloud Co., Ltd. All rights reserved.
  */
 public class QiNiuConfig {
     /*默认域名*/
@@ -53,7 +58,7 @@ public class QiNiuConfig {
 
     public static String getFileName() {
         SimpleDateFormat format = new SimpleDateFormat("yyyyMMdd_HHmmss");
-        String data=format.format(new Date());
-        return FILE_NAME+data+"_"+System.currentTimeMillis();
+        String data = format.format(new Date());
+        return FILE_NAME + data + "_" + System.currentTimeMillis();
     }
 }

@@ -8,16 +8,20 @@ import okhttp3.Interceptor;
 import okhttp3.OkHttpClient;
 
 /**
- * Created by ljd on 4/12/16.
+ * author: hezhiWu <wuhezhi007@gmail.com>
+ * version: V1.0
+ * created at 2017/3/14 10:43
+ * <p>
+ * Copyright (c) 2017 Shenzhen O&M Cloud Co., Ltd. All rights reserved.
  */
 public class ProgressHelper {
 
     private static ProgressBean progressBean = new ProgressBean();
     private static ProgressHandler mProgressHandler;
 
-    public static OkHttpClient.Builder addProgress(OkHttpClient.Builder builder){
+    public static OkHttpClient.Builder addProgress(OkHttpClient.Builder builder) {
 
-        if (builder == null){
+        if (builder == null) {
             builder = new OkHttpClient.Builder();
         }
 
@@ -25,8 +29,8 @@ public class ProgressHelper {
             //该方法在子线程中运行
             @Override
             public void onProgress(long progress, long total, boolean done) {
-                Log.d("progress:",String.format("%d%% done\n",(100 * progress) / total));
-                if (mProgressHandler == null){
+                Log.d("progress:", String.format("%d%% done\n", (100 * progress) / total));
+                if (mProgressHandler == null) {
                     return;
                 }
 
@@ -53,7 +57,7 @@ public class ProgressHelper {
         return builder;
     }
 
-    public static void setProgressHandler(ProgressHandler progressHandler){
+    public static void setProgressHandler(ProgressHandler progressHandler) {
         mProgressHandler = progressHandler;
     }
 }

@@ -3,11 +3,13 @@ package com.wayto.android.utils;
 import android.content.res.ColorStateList;
 
 /**
- * @author hezhiWu
- * @version V1.0
- * @Package com.yunwei.frame.utils
- * @Description:
- * @date 2016/11/28 11:51
+ * 颜色处理工具类
+ * <p>
+ * author: hezhiWu <wuhezhi007@gmail.com>
+ * version: V1.0
+ * created at 2017/3/14 10:19
+ * <p>
+ * Copyright (c) 2017 Shenzhen O&M Cloud Co., Ltd. All rights reserved.
  */
 
 public class ColorUtils {
@@ -26,7 +28,7 @@ public class ColorUtils {
                 {-CHECKED_ATTR}
         };
 
-        int[] colors = new int[] {
+        int[] colors = new int[]{
                 tintColor - 0xAA000000,
                 0xFFBABABA,
                 tintColor - 0x99000000,
@@ -47,7 +49,7 @@ public class ColorUtils {
                 {-CHECKED_ATTR}
         };
 
-        int[] colors = new int[] {
+        int[] colors = new int[]{
                 tintColor - 0xE1000000,
                 0x10000000,
                 tintColor - 0xD0000000,

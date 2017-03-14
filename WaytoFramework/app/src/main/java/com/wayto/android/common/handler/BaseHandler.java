@@ -8,12 +8,13 @@ import android.os.Message;
 import java.lang.ref.WeakReference;
 
 /**
- * @Package: com.yunwei.zaina.common.mServiceHandler
- * @Description:handler基类，防止handler引用Activity,造成内存溢出
- * @author: Aaron
- * @date: 2016-06-05
- * @Time: 15:12
- * @version: V1.0
+ * handler基类，防止handler引用Activity,造成内存溢出
+ * <p>
+ * author: hezhiWu <wuhezhi007@gmail.com>
+ * version: V1.0
+ * created at 2017/3/14 10:14
+ * <p>
+ * Copyright (c) 2017 Shenzhen O&M Cloud Co., Ltd. All rights reserved.
  */
 public class BaseHandler extends Handler {
     WeakReference<Activity> weakReference;

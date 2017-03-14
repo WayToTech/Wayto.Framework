@@ -18,11 +18,13 @@ import butterknife.BindView;
 import butterknife.ButterKnife;
 
 /**
- * @author hezhiWu
- * @version V1.0
- * @Package com.yunwei.frame.view
- * @Description:上拉下拉刷新RecyclerView
- * @date 2016/12/9 11:06
+ * 上拉下拉刷新RecyclerView
+ * <p>
+ * author: hezhiWu <wuhezhi007@gmail.com>
+ * version: V1.0
+ * created at 2017/3/14 10:17
+ * <p>
+ * Copyright (c) 2017 Shenzhen O&M Cloud Co., Ltd. All rights reserved.
  */
 
 public class PullToRefreshRecyclerView extends LinearLayout implements SwipeRefreshLayout.OnRefreshListener {

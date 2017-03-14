@@ -11,11 +11,13 @@ import com.wayto.android.function.accountFuncation.data.soure.AccountRemoteRepo;
 import com.wayto.android.utils.ISpfUtil;
 
 /**
- * @author hezhiWu
- * @version V1.0
- * @Package com.yunwei.android.function.account
- * @Description:登录Presenter
- * @date 2016/11/29 15:21
+ * 登录Presenter
+ * <p>
+ * author: hezhiWu <wuhezhi007@gmail.com>
+ * version: V1.0
+ * created at 2017/3/14 10:41
+ * <p>
+ * Copyright (c) 2017 Shenzhen O&M Cloud Co., Ltd. All rights reserved.
  */
 
 public class AccountPresenter implements AccountDataSoure.LoginCallBack, AccountDataSoure.ModifyHeadCallBack, AccountDataSoure.ModifyPasswordCallBack, AccountContract.Presenter {

@@ -21,11 +21,13 @@ import java.util.List;
 import butterknife.ButterKnife;
 
 /**
- * @author hezhiWu
- * @version V1.0
- * @Package com.yunwei.frame.function.deviceFuncations
- * @Description:填报BaseFragment
- * @date 2017/2/20 14:32
+ * 填报BaseFragment
+ * <p>
+ * author: hezhiWu <wuhezhi007@gmail.com>
+ * version: V1.0
+ * created at 2017/3/14 10:39
+ * <p>
+ * Copyright (c) 2017 Shenzhen O&M Cloud Co., Ltd. All rights reserved.
  */
 
 public abstract class FillBaseFragment<T> extends BaseFragment {

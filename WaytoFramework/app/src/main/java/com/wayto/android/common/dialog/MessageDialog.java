@@ -10,12 +10,13 @@ import com.wayto.android.R;
 
 
 /**
- * @Package: com.yunwei.zaina.common.dialog
- * @Description:消息提示对话框
- * @author: Aaron
- * @date: 2016-06-06
- * @Time: 09:20
- * @version: V1.0
+ * 提示消息Dialog
+ * <p>
+ * author: hezhiWu <wuhezhi007@gmail.com>
+ * version: V1.0
+ * created at 2017/3/14 10:13
+ * <p>
+ * Copyright (c) 2017 Shenzhen O&M Cloud Co., Ltd. All rights reserved.
  */
 public class MessageDialog extends BaseDialog {
 

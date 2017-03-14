@@ -5,6 +5,13 @@ import com.google.gson.Gson;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
+/**
+ * author: hezhiWu <wuhezhi007@gmail.com>
+ * version: V1.0
+ * created at 2017/3/14 10:44
+ * <p>
+ * Copyright (c) 2017 Shenzhen O&M Cloud Co., Ltd. All rights reserved.
+ */
 public class GsonService {
 
     private static final Pattern REG_UNICODE = Pattern.compile("[0-9A-Fa-f]{4}");

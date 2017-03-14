@@ -11,7 +11,11 @@ import okio.Okio;
 import okio.Sink;
 
 /**
- * Created by ljd on 4/18/16.
+ * author: hezhiWu <wuhezhi007@gmail.com>
+ * version: V1.0
+ * created at 2017/3/14 10:43
+ * <p>
+ * Copyright (c) 2017 Shenzhen O&M Cloud Co., Ltd. All rights reserved.
  */
 public class ProgressRequestBody extends RequestBody {
 
@@ -19,7 +23,7 @@ public class ProgressRequestBody extends RequestBody {
     private final ProgressListener progressListener;
     private BufferedSink bufferedSink;
 
-    public ProgressRequestBody(RequestBody requestBody,ProgressListener progressListener){
+    public ProgressRequestBody(RequestBody requestBody, ProgressListener progressListener) {
         this.requestBody = requestBody;
         this.progressListener = progressListener;
     }

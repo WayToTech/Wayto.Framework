@@ -14,11 +14,13 @@ import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
 
 /**
- * @author hezhiWu
- * @version V1.0
- * @Package com.yunwei.frame.common.retrofit
- * @Description:
- * @date 2016/11/29 19:59
+ * Retrofit 管理类
+ * <p>
+ * author: hezhiWu <wuhezhi007@gmail.com>
+ * version: V1.0
+ * created at 2017/3/14 10:43
+ * <p>
+ * Copyright (c) 2017 Shenzhen O&M Cloud Co., Ltd. All rights reserved.
  */
 
 public class RetrofitManager {

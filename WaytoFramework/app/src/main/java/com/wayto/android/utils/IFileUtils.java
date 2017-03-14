@@ -8,17 +8,19 @@ import java.util.UUID;
 import static com.baidu.tts.tools.FileTools.deleteFile;
 
 /**
- * @author hezhiWu
- * @version V1.0
- * @Package com.yunwei.frame.utils
- * @Description:文件工具类
- * @date 2017/1/10 11:42
+ * 文件工具类
+ * <p>
+ * author: hezhiWu <wuhezhi007@gmail.com>
+ * version: V1.0
+ * created at 2017/3/14 10:19
+ * <p>
+ * Copyright (c) 2017 Shenzhen O&M Cloud Co., Ltd. All rights reserved.
  */
 
 public class IFileUtils {
 
     /*文件根目录*/
-    public static final String FILE_ROOT_DIRECTORY = "Yunwei";
+    public static final String FILE_ROOT_DIRECTORY = "Wayto";
     /*项目根目录*/
     public static final String PROJECT_ROOT_DIRECTORY = "Base";
     /*图片文件夹*/

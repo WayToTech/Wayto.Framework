@@ -8,11 +8,13 @@ import com.wayto.android.db.WorkRecordTable;
 import com.wayto.android.service.PollingService;
 
 /**
- * @author hezhiWu
- * @version V1.0
- * @Package com.yunwei.frame.function.pollingFuncation
- * @Description:轮询管理工具类
- * @date 2017/2/6 14:19
+ * 轮询管理工具类
+ * <p>
+ * author: hezhiWu <wuhezhi007@gmail.com>
+ * version: V1.0
+ * created at 2017/3/14 10:28
+ * <p>
+ * Copyright (c) 2017 Shenzhen O&M Cloud Co., Ltd. All rights reserved.
  */
 
 public class PollingManage {
@@ -48,7 +50,7 @@ public class PollingManage {
             public void insertWorkRecordFailure() {
 
             }
-        }).insertWorkRecord(table,true);
+        }).insertWorkRecord(table, true);
     }
 
     /**
@@ -58,7 +60,7 @@ public class PollingManage {
      * @param table
      * @param insertWorkRecordView
      */
-    public void saveWorkRecord(Context context, WorkRecordTable table,PollingContract.InsertWorkRecordView insertWorkRecordView) {
+    public void saveWorkRecord(Context context, WorkRecordTable table, PollingContract.InsertWorkRecordView insertWorkRecordView) {
         new PollingPresent(PollingRemoteRepo.newInstance(), insertWorkRecordView).insertWorkRecord(table, false);
     }
 

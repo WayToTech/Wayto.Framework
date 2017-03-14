@@ -23,12 +23,13 @@ import java.util.List;
 import java.util.Map;
 
 /**
- * @Package: com.yunwei.map
- * @Description:
- * @author: Aaron
- * @date: 2016-06-01
- * @Time: 19:40
- * @version: V1.0
+ * MapView
+ * <p>
+ * author: hezhiWu <wuhezhi007@gmail.com>
+ * version: V1.0
+ * created at 2017/3/14 10:45
+ * <p>
+ * Copyright (c) 2017 Shenzhen O&M Cloud Co., Ltd. All rights reserved.
  */
 public class MapView extends ArcGisLocationLayer {
 
@@ -203,9 +204,10 @@ public class MapView extends ArcGisLocationLayer {
 
     /**
      * 设置定位图标
+     *
      * @param resId
      */
-    public void setLocationBtnBag(int resId){
+    public void setLocationBtnBag(int resId) {
         locationIv.setImageResource(resId);
     }
 

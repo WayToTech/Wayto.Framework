@@ -6,11 +6,13 @@ import com.wayto.android.db.WorkRecordTable;
 import java.util.List;
 
 /**
- * @author hezhiWu
- * @version V1.0
- * @Package com.yunwei.frame.function.pollingFuncation
- * @Description:
- * @date 2017/1/20 16:34
+ * 轮询上传协议接口
+ * <p>
+ * author: hezhiWu <wuhezhi007@gmail.com>
+ * version: V1.0
+ * created at 2017/3/14 10:28
+ * <p>
+ * Copyright (c) 2017 Shenzhen O&M Cloud Co., Ltd. All rights reserved.
  */
 
 public interface PollingContract {

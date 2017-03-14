@@ -10,11 +10,11 @@ import retrofit2.Callback;
 import retrofit2.Response;
 
 /**
- * @author hezhiWu
- * @version V1.0
- * @Package com.yunwei.frame.function.refreshLocationFuncation.data.source
- * @Description:
- * @date 2017/2/8 11:49
+ * author: hezhiWu <wuhezhi007@gmail.com>
+ * version: V1.0
+ * created at 2017/3/14 10:28
+ * <p>
+ * Copyright (c) 2017 Shenzhen O&M Cloud Co., Ltd. All rights reserved.
  */
 
 public class UploadLocationRemoteRepo implements UploadLocationDataSource {
@@ -36,12 +36,12 @@ public class UploadLocationRemoteRepo implements UploadLocationDataSource {
         call.enqueue(new Callback<ResponseModel>() {
             @Override
             public void onResponse(Call<ResponseModel> call, Response<ResponseModel> response) {
-                ILog.d(TAG,response.code()+"");
+                ILog.d(TAG, response.code() + "");
             }
 
             @Override
             public void onFailure(Call<ResponseModel> call, Throwable t) {
-                ILog.e(TAG,t.getMessage());
+                ILog.e(TAG, t.getMessage());
             }
         });
     }

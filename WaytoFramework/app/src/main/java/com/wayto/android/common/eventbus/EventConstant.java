@@ -1,12 +1,13 @@
 package com.wayto.android.common.eventbus;
 
 /**
- * @Package: com.yunwei.zaina.common.eventbus
- * @Description:event消息常量類
- * @author: Aaron
- * @date: 2016-06-02
- * @Time: 11:31
- * @version: V1.0
+ * event消息常量类
+ * <p>
+ * author: hezhiWu <wuhezhi007@gmail.com>
+ * version: V1.0
+ * created at 2017/3/14 10:14
+ * <p>
+ * Copyright (c) 2017 Shenzhen O&M Cloud Co., Ltd. All rights reserved.
  */
 public class EventConstant {
 

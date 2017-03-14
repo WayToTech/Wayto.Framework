@@ -25,11 +25,13 @@ import retrofit2.http.Path;
 import retrofit2.http.Url;
 
 /**
- * @author hezhiWu
- * @version V1.0
- * @Package com.yunwei.frame.common.retrofit
- * @Description:请求API接口配制
- * @date 2016/11/29 15:50
+ * 请求API接口配制
+ * <p>
+ * author: hezhiWu <wuhezhi007@gmail.com>
+ * version: V1.0
+ * created at 2017/3/14 10:43
+ * <p>
+ * Copyright (c) 2017 Shenzhen O&M Cloud Co., Ltd. All rights reserved.
  */
 
 public interface APIService {

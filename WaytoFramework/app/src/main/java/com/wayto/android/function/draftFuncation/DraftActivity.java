@@ -17,11 +17,13 @@ import butterknife.BindView;
 import butterknife.ButterKnife;
 
 /**
- * @author hezhiWu
- * @version V1.0
- * @Package com.yunwei.frame.function.draftFuncation
- * @Description:我的草稿
- * @date 2017/1/16 15:30
+ * 我的草稿
+ * <p>
+ * author: hezhiWu <wuhezhi007@gmail.com>
+ * version: V1.0
+ * created at 2017/3/14 10:38
+ * <p>
+ * Copyright (c) 2017 Shenzhen O&M Cloud Co., Ltd. All rights reserved.
  */
 
 public class DraftActivity extends BaseActivity {

@@ -8,12 +8,18 @@ import android.widget.PopupWindow;
 
 
 /**
- * Created by SEEBOK on 2016/8/11.
+ * 公共引用PopupWindow
+ * <p>
+ * author: hezhiWu <wuhezhi007@gmail.com>
+ * version: V1.0
+ * created at 2017/3/14 10:13
+ * <p>
+ * Copyright (c) 2017 Shenzhen O&M Cloud Co., Ltd. All rights reserved.
  */
 public class CommPopupWindow extends PopupWindow {
 
     public CommPopupWindow(View contentView, int width, int height) {
-        super(contentView, width, height,true);
+        super(contentView, width, height, true);
 
         /**
          * 设置 PopupWindow 可点击内部操作
@@ -30,7 +36,7 @@ public class CommPopupWindow extends PopupWindow {
 
     }
 
-    public void showAtButton(View parent){
-        showAtLocation(parent, Gravity.BOTTOM,0,0);
+    public void showAtButton(View parent) {
+        showAtLocation(parent, Gravity.BOTTOM, 0, 0);
     }
 }

@@ -6,12 +6,13 @@ import android.content.Context;
 import android.view.View;
 
 /**
- * @Package: com.jinggan.dear.common.dialog
- * @Description:对话框工厂类
- * @author: Aaron
- * @date: 2015-11-28
- * @Time: 16:23
- * @version: V1.0
+ * 对话框Factory
+ * <p>
+ * author: hezhiWu <wuhezhi007@gmail.com>
+ * version: V1.0
+ * created at 2017/3/14 10:13
+ * <p>
+ * Copyright (c) 2017 Shenzhen O&M Cloud Co., Ltd. All rights reserved.
  */
 public class DialogFactory {
 
@@ -576,13 +577,14 @@ public class DialogFactory {
 
     /**
      * 带有确定与取消的自定义View的Dialog
+     *
      * @param activity
      * @param view
      * @param confirmListener
      * @param cancelListener
      * @return
      */
-    public static Dialog createDialog(Activity activity, String title,final View view, View.OnClickListener confirmListener, View.OnClickListener cancelListener) {
+    public static Dialog createDialog(Activity activity, String title, final View view, View.OnClickListener confirmListener, View.OnClickListener cancelListener) {
         if (activity == null) {
             return null;
         }
@@ -632,18 +634,19 @@ public class DialogFactory {
 
     /**
      * 只有View的Dialog
+     *
      * @param activity
      * @param view
      * @return
      */
-    public static Dialog createDialog(Activity activity, String title, final View view, View.OnClickListener cancelLister){
-        if (activity==null){
+    public static Dialog createDialog(Activity activity, String title, final View view, View.OnClickListener cancelLister) {
+        if (activity == null) {
             return null;
         }
-        if (activity.isFinishing()){
+        if (activity.isFinishing()) {
             return null;
         }
-        BaseDialog dialog=new BaseDialog(activity) {
+        BaseDialog dialog = new BaseDialog(activity) {
             @Override
             public View createContentView() {
                 return view;
@@ -654,7 +657,7 @@ public class DialogFactory {
         dialog.setCancelBtnOnClickListener(cancelLister);
         dialog.setCanceledOnTouchOutside(false);
         dialog.show();
-        return  dialog;
+        return dialog;
     }
 
     /**
@@ -701,10 +704,10 @@ public class DialogFactory {
      */
     public static Dialog createLoadingDialog(Activity context, String msg,
                                              boolean backPressCancel) {
-        if (context==null){
+        if (context == null) {
             return null;
         }
-        if (context.isFinishing()){
+        if (context.isFinishing()) {
             return null;
         }
         LoadingDialog dialog = new LoadingDialog(context);
@@ -724,10 +727,10 @@ public class DialogFactory {
      */
     public static Dialog createLoadingDialog(Activity context, int msgRes,
                                              boolean backPressCancel) {
-        if (context==null){
+        if (context == null) {
             return null;
         }
-        if (context.isFinishing()){
+        if (context.isFinishing()) {
             return null;
         }
         LoadingDialog dialog = new LoadingDialog(context);

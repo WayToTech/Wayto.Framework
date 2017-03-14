@@ -35,13 +35,14 @@ import com.wayto.android.R;
 import com.wayto.android.utils.IDensityUtil;
 
 /**
- * @Package: com.yunwei.zaina.widget
- * @Description: Activity 滑动删除
- * @author: Aaron
- * @date: 2016-05-30
- * @Time: 14:35
- * @version: V1.0
- */
+ * Activity 滑动删除
+ * 
+ * author: hezhiWu <wuhezhi007@gmail.com>
+ * version: V1.0
+ * created at 2017/3/14 10:18
+ * <p>
+ * Copyright (c) 2017 Shenzhen O&M Cloud Co., Ltd. All rights reserved.
+*/
 public class SwipeBackLayout extends FrameLayout {
 
     //private View backgroundLayer;用来设置滑动时的背景色

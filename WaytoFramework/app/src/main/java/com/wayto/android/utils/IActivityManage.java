@@ -6,12 +6,13 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * @Package: com.yunwei.zaina.utils
- * @Description: Activity类管工具类
- * @author: hezhiWu
- * @date: 2016-05-31
- * @Time: 11:59
- * @version: V1.0
+ * Activity类管工具类
+ * <p>
+ * author: hezhiWu <wuhezhi007@gmail.com>
+ * version: V1.0
+ * created at 2017/3/14 10:19
+ * <p>
+ * Copyright (c) 2017 Shenzhen O&M Cloud Co., Ltd. All rights reserved.
  */
 public class IActivityManage {
     private List<Activity> activities = new ArrayList<>();

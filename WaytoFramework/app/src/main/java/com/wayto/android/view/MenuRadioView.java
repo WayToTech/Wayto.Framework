@@ -21,11 +21,13 @@ import java.util.List;
 import butterknife.ButterKnife;
 
 /**
- * @author hezhiWu
- * @version V1.0
- * @Package com.yunwei.hydrant.widget
- * @Description:单选菜单样式Layout
- * @date 2016/10/18 9:06
+ * 单选菜单样式Layout
+ * <p>
+ * author: hezhiWu <wuhezhi007@gmail.com>
+ * version: V1.0
+ * created at 2017/3/14 10:16
+ * <p>
+ * Copyright (c) 2017 Shenzhen O&M Cloud Co., Ltd. All rights reserved.
  */
 
 public class MenuRadioView extends LinearLayout {
@@ -99,9 +101,9 @@ public class MenuRadioView extends LinearLayout {
      * @param content
      */
     public void setSelectContent(String content) {
-        if (adapter.getList()!=null&&adapter.getList().size()>0){
-            for (int i=0;i<adapter.getList().size();i++){
-                if (adapter.getList().get(i).equals(content)){
+        if (adapter.getList() != null && adapter.getList().size() > 0) {
+            for (int i = 0; i < adapter.getList().size(); i++) {
+                if (adapter.getList().get(i).equals(content)) {
                     selectePosition = i;
                     break;
                 }

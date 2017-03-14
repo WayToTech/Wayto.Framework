@@ -1,8 +1,13 @@
 package com.wayto.android.common.eventbus;
 
 /**
- * EventBus 常量值定义
- * Created by wuhezhi on 2015/12/7.
+ * event 传递实体
+ * <p>
+ * author: hezhiWu <wuhezhi007@gmail.com>
+ * version: V1.0
+ * created at 2017/3/14 10:14
+ * <p>
+ * Copyright (c) 2017 Shenzhen O&M Cloud Co., Ltd. All rights reserved.
  */
 public class NoticeEvent {
 

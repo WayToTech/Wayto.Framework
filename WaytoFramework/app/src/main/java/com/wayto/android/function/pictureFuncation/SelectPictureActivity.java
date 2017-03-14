@@ -33,11 +33,13 @@ import butterknife.BindView;
 import butterknife.ButterKnife;
 
 /**
- * @author hezhiWu
- * @version V1.0
- * @Package com.yunwei.frame.function.deviceFuncations.picture
- * @Description:选择图片Activity
- * @date 2016/12/29 11:27
+ * 选择图片Activity
+ * <p>
+ * author: hezhiWu <wuhezhi007@gmail.com>
+ * version: V1.0
+ * created at 2017/3/14 10:30
+ * <p>
+ * Copyright (c) 2017 Shenzhen O&M Cloud Co., Ltd. All rights reserved.
  */
 
 public class SelectPictureActivity extends BaseActivity implements PictureContract.View, SwipeRefreshLayout.OnRefreshListener, SelectPictrueAdapter.OnClickSelectePictureListener {

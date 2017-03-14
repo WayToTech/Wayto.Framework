@@ -16,13 +16,14 @@ import butterknife.BindView;
 import butterknife.ButterKnife;
 
 /**
- * @author hezhiWu
- * @version V1.0
- * @Package com.yunwei.android.function.account
- * @Description:重置密码
- * @date 2017/1/10 15:33
+ * 重置密码
+ * <p>
+ * author: hezhiWu <wuhezhi007@gmail.com>
+ * version: V1.0
+ * created at 2017/3/14 10:41
+ * <p>
+ * Copyright (c) 2017 Shenzhen O&M Cloud Co., Ltd. All rights reserved.
  */
-
 public class ModifyPasswordActivity extends BaseActivity implements AccountContract.ModifyUserPasswordView {
 
     @BindView(R.id.pwd_edit_old_edit)

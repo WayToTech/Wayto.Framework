@@ -4,11 +4,11 @@ import android.content.Context;
 import android.location.LocationManager;
 
 /**
- * Describe:
- * Author: hezhiWu
- * Date: 2016-08-08
- * Time: 21:46
- * Version:1.0
+ * author: hezhiWu <wuhezhi007@gmail.com>
+ * version: V1.0
+ * created at 2017/3/14 10:46
+ * <p>
+ * Copyright (c) 2017 Shenzhen O&M Cloud Co., Ltd. All rights reserved.
  */
 public class GPSUtils {
     /**

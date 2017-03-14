@@ -14,12 +14,13 @@ import android.widget.TextView;
 import com.wayto.android.R;
 
 /**
- * @Package: com.yunwei.zaina.common.dialog
- * @Description:
- * @author: Aaron
- * @date: 2016-06-06
- * @Time: 09:13
- * @version: V1.0
+ * Base Dialog
+ * <p>
+ * author: hezhiWu <wuhezhi007@gmail.com>
+ * version: V1.0
+ * created at 2017/3/14 10:13
+ * <p>
+ * Copyright (c) 2017 Shenzhen O&M Cloud Co., Ltd. All rights reserved.
  */
 public abstract class BaseDialog extends Dialog {
     /**
@@ -132,9 +133,9 @@ public abstract class BaseDialog extends Dialog {
     }
 
     /**
-     *  获取内容布局控件
+     * 获取内容布局控件
      */
-    public FrameLayout getContentView(){
+    public FrameLayout getContentView() {
         return mContent;
     }
 
@@ -354,7 +355,7 @@ public abstract class BaseDialog extends Dialog {
     /**
      * 清除内容控件
      */
-    public void removeContentView(){
+    public void removeContentView() {
         mContent.removeAllViews();
     }
 }

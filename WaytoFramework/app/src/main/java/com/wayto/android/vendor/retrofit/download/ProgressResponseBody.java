@@ -1,4 +1,5 @@
 package com.wayto.android.vendor.retrofit.download;
+
 import java.io.IOException;
 
 import okhttp3.MediaType;
@@ -10,7 +11,11 @@ import okio.Okio;
 import okio.Source;
 
 /**
- * Created by ljd on 3/29/16.
+ * author: hezhiWu <wuhezhi007@gmail.com>
+ * version: V1.0
+ * created at 2017/3/14 10:44
+ * <p>
+ * Copyright (c) 2017 Shenzhen O&M Cloud Co., Ltd. All rights reserved.
  */
 public class ProgressResponseBody extends ResponseBody {
     private final ResponseBody responseBody;

@@ -27,11 +27,13 @@ import retrofit2.Callback;
 import retrofit2.Response;
 
 /**
- * @author hezhiWu
- * @version V1.0
- * @Package com.yunwei.frame.function.account.data.soure
- * @Description:登录业务请求
- * @date 2016/11/29 15:19
+ * 登录业务请求
+ * <p>
+ * author: hezhiWu <wuhezhi007@gmail.com>
+ * version: V1.0
+ * created at 2017/3/14 10:11
+ * <p>
+ * Copyright (c) 2017 Shenzhen O&M Cloud Co., Ltd. All rights reserved.
  */
 
 public class AccountRemoteRepo implements AccountDataSoure {

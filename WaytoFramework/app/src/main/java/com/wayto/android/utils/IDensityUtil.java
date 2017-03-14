@@ -5,12 +5,13 @@ import android.content.Context;
 import android.util.DisplayMetrics;
 
 /**
- * @Package: com.yunwei.zaina.utils
- * @Description: 系统屏幕的一些操作
- * @author: Aaron
- * @date: 2016-05-31
- * @Time: 11:59
- * @version: V1.0
+ * 系统屏幕的一些操作
+ * <p>
+ * author: hezhiWu <wuhezhi007@gmail.com>
+ * version: V1.0
+ * created at 2017/3/14 10:19
+ * <p>
+ * Copyright (c) 2017 Shenzhen O&M Cloud Co., Ltd. All rights reserved.
  */
 public final class IDensityUtil {
 

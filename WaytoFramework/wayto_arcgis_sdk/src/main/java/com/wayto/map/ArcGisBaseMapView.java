@@ -28,17 +28,18 @@ import com.wayto.map.google.GoogleMapLayer;
 import com.wayto.map.google.GoogleMapLayerTypes;
 
 /**
- * @Package: com.yunwei.map.widget
- * @Description:ArcGis 基础图层
- * @author: Aaron
- * @date: 2016-05-31
- * @Time: 20:43
- * @version: V1.0
+ * ArcGis 基础图层
+ * <p>
+ * author: hezhiWu <wuhezhi007@gmail.com>
+ * version: V1.0
+ * created at 2017/3/14 10:45
+ * <p>
+ * Copyright (c) 2017 Shenzhen O&M Cloud Co., Ltd. All rights reserved.
  */
 public class ArcGisBaseMapView extends MapView implements OnStatusChangedListener {
     private final String TAG = getClass().getSimpleName();
 
-    private final String CLIENT_ID="1eFHW78avlnRUPHm";
+    private final String CLIENT_ID = "1eFHW78avlnRUPHm";
 
     protected ImageView zoomoutIv, zoominIv, locationIv;
     protected TextView switchLayerBtn;
@@ -178,7 +179,7 @@ public class ArcGisBaseMapView extends MapView implements OnStatusChangedListene
                     isFlow = false;
                     locationIv.setImageResource(R.mipmap.custom_loc);
                 }
-                if (listener!=null){
+                if (listener != null) {
                     listener.onClickFlow();
                 }
             }
@@ -292,7 +293,7 @@ public class ArcGisBaseMapView extends MapView implements OnStatusChangedListene
         return daoSession;
     }
 
-    public interface MapViewClickListener{
+    public interface MapViewClickListener {
         void onClickFlow();
     }
 }

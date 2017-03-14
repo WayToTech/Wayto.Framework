@@ -18,12 +18,13 @@ import com.wayto.android.utils.ILog;
 import com.wayto.android.utils.IUtil;
 
 /**
- * @Package: com.yunwei.zaina.ui.adapter
- * @Description:附件图片适配器
- * @author: Aaron
- * @date: 2016-06-14
- * @Time: 19:00
- * @version: V1.0
+ * 附件图片适配器
+ * <p>
+ * author: hezhiWu <wuhezhi007@gmail.com>
+ * version: V1.0
+ * created at 2017/3/14 10:15
+ * <p>
+ * Copyright (c) 2017 Shenzhen O&M Cloud Co., Ltd. All rights reserved.
  */
 public class AccessoryImgAdapter extends ArrayListAdapter<PictureEntity> {
     private final String TAG = getClass().getSimpleName();

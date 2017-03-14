@@ -3,14 +3,14 @@ package com.wayto.android.function.refreshLocationFuncation.data;
 import java.io.Serializable;
 
 /**
- * @author hezhiWu
- * @version V1.0
- * @Package com.yunwei.frame.function.refreshLocationFuncation.data
- * @Description:
- * @date 2017/2/8 11:48
+ * author: hezhiWu <wuhezhi007@gmail.com>
+ * version: V1.0
+ * created at 2017/3/14 10:27
+ * <p>
+ * Copyright (c) 2017 Shenzhen O&M Cloud Co., Ltd. All rights reserved.
  */
 
-public class UploadLocationEntity implements Serializable{
+public class UploadLocationEntity implements Serializable {
     private double Lng;
     private double Lat;
     private double Altitude;

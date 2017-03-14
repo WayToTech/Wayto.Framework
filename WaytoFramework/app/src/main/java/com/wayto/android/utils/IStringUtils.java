@@ -4,13 +4,14 @@ import java.util.Locale;
 import java.util.regex.Pattern;
 
 /**
- * @Package: com.yunwei.zaina.utils
- * @Description:字符串操作工具类
- * @author: hezhiWu
- * @date: 2016-06-05
- * @Time: 17:50
- * @version: V1.0
- */
+ * 字符串操作工具类
+ * 
+ * author: hezhiWu <wuhezhi007@gmail.com>
+ * version: V1.0
+ * created at 2017/3/14 10:22
+ * <p>
+ * Copyright (c) 2017 Shenzhen O&M Cloud Co., Ltd. All rights reserved.
+*/
 public class IStringUtils {
 
     private final static Pattern emailer = Pattern

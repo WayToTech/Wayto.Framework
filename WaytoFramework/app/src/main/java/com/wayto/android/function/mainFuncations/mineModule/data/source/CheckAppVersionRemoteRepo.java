@@ -25,13 +25,14 @@ import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
 
 /**
- * @author hezhiWu
- * @version V1.0
- * @Package com.yunwei.cmcc.ui.mainFunctions.data.source
- * @Description:App版本检测
- * @date 2016/11/17 10:34
+ * App版本检测
+ * <p>
+ * author: hezhiWu <wuhezhi007@gmail.com>
+ * version: V1.0
+ * created at 2017/3/14 10:37
+ * <p>
+ * Copyright (c) 2017 Shenzhen O&M Cloud Co., Ltd. All rights reserved.
  */
-
 public class CheckAppVersionRemoteRepo implements CheckAppVersionDataSource {
     private final String TAG = getClass().getSimpleName();
 

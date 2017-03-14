@@ -5,11 +5,13 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * @author hezhiWu
- * @version V1.0
- * @Package com.yunwei.frame.function.uploadFileFuncation
- * @Description:文件上传管理类
- * @date 2017/2/8 15:54
+ * 文件上传管理类
+ * <p>
+ * author: hezhiWu <wuhezhi007@gmail.com>
+ * version: V1.0
+ * created at 2017/3/14 10:23
+ * <p>
+ * Copyright (c) 2017 Shenzhen O&M Cloud Co., Ltd. All rights reserved.
  */
 
 public class UploadFileManager {
@@ -59,7 +61,7 @@ public class UploadFileManager {
             callBack.onUploadFileFailure();
         }
 
-       final List<String> lists = new ArrayList<>();
+        final List<String> lists = new ArrayList<>();
         callBack.onUploadFileStart();
         for (int i = 0; i < files.size(); i++) {
             new UploadFilePresenter(new UploadFileContract.View() {

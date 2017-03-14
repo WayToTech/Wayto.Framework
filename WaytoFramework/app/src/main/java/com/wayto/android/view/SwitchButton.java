@@ -32,13 +32,14 @@ import com.wayto.android.R;
 import com.wayto.android.utils.ColorUtils;
 
 /**
- * @author hezhiWu
- * @version V1.0
- * @Package com.yunwei.frame.view
- * @Description:
- * @date 2016/11/28 11:50
+ * 自定义 switchButton
+ * <p>
+ * author: hezhiWu <wuhezhi007@gmail.com>
+ * version: V1.0
+ * created at 2017/3/14 10:18
+ * <p>
+ * Copyright (c) 2017 Shenzhen O&M Cloud Co., Ltd. All rights reserved.
  */
-
 public class SwitchButton extends CompoundButton {
 
     public static final float DEFAULT_BACK_MEASURE_RATIO = 1.8f;

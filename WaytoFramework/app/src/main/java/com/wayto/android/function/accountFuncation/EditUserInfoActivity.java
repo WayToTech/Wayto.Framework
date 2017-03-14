@@ -27,13 +27,14 @@ import butterknife.ButterKnife;
 import butterknife.OnClick;
 
 /**
- * @author hezhiWu
- * @version V1.0
- * @Package com.yunwei.android.function.account
- * @Description:
- * @date 2017/1/9 15:41
- */
-
+ * 登录界面
+ * 
+ * author: hezhiWu <wuhezhi007@gmail.com>
+ * version: V1.0
+ * created at 2017/3/14 10:42
+ * <p>
+ * Copyright (c) 2017 Shenzhen O&M Cloud Co., Ltd. All rights reserved.
+*/
 public class EditUserInfoActivity extends BaseActivity implements AccountContract.ModifyUearHeadView {
 
     @BindView(R.id.edit_user_head_iv)

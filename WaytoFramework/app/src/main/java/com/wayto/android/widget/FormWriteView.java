@@ -18,13 +18,14 @@ import android.widget.TextView;
 import com.wayto.android.R;
 
 /**
- * @Package: com.yunwei.zaina.widget
- * @Description:填写表单
- * @author: Aaron
- * @date: 2016-06-14
- * @Time: 17:15
- * @version: V1.0
- */
+ * 填写表单
+ * 
+ * author: hezhiWu <wuhezhi007@gmail.com>
+ * version: V1.0
+ * created at 2017/3/14 10:17
+ * <p>
+ * Copyright (c) 2017 Shenzhen O&M Cloud Co., Ltd. All rights reserved.
+*/
 public class FormWriteView extends LinearLayout implements TextWatcher {
 
     private TextView propertyText;

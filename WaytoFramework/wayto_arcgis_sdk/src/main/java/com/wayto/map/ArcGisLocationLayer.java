@@ -18,12 +18,13 @@ import com.wayto.map.utils.MSpfUtil;
 import java.util.Map;
 
 /**
- * @Package: com.yunwei.map.widget
- * @Description:定位图层、设置点线图层
- * @author: Aaron
- * @date: 2016-06-01
- * @Time: 19:38
- * @version: V1.0
+ * 定位图层、设置点线图层
+ * <p>
+ * author: hezhiWu <wuhezhi007@gmail.com>
+ * version: V1.0
+ * created at 2017/3/14 10:45
+ * <p>
+ * Copyright (c) 2017 Shenzhen O&M Cloud Co., Ltd. All rights reserved.
  */
 public class ArcGisLocationLayer extends ArcGisBaseMapView {
 

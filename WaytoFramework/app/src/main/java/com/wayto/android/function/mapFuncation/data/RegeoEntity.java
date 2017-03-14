@@ -5,15 +5,15 @@ import com.google.gson.annotations.SerializedName;
 import java.io.Serializable;
 
 /**
- * @author hezhiWu
- * @version V1.0
- * @Package com.yunwei.water.entity
- * @Description:
- * @date 2016/9/19 11:25
+ * author: hezhiWu <wuhezhi007@gmail.com>
+ * version: V1.0
+ * created at 2017/3/14 10:32
+ * <p>
+ * Copyright (c) 2017 Shenzhen O&M Cloud Co., Ltd. All rights reserved.
  */
-public class RegeoEntity implements Serializable{
+public class RegeoEntity implements Serializable {
 
-    public class Regeocode implements Serializable{
+    public class Regeocode implements Serializable {
         //全文地址
         private String formatted_address;
 
@@ -23,7 +23,7 @@ public class RegeoEntity implements Serializable{
         /**
          * 地址组件集合
          */
-        class AddressComponent implements Serializable{
+        class AddressComponent implements Serializable {
 
             /**
              * 路段
@@ -85,7 +85,6 @@ public class RegeoEntity implements Serializable{
     public Regeocode getRegeocode() {
         return this.regeocode;
     }
-
 
 
 }

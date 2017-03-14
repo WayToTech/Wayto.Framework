@@ -24,13 +24,14 @@ import butterknife.BindView;
 import butterknife.ButterKnife;
 
 /**
- * @author hezhiWu
- * @version V1.0
- * @Package com.yunwei.frame.function.deviceFuncations.picture
- * @Description:
- * @date 2017/1/3 16:37
+ * 选择图片适配器
+ * <p>
+ * author: hezhiWu <wuhezhi007@gmail.com>
+ * version: V1.0
+ * created at 2017/3/14 10:30
+ * <p>
+ * Copyright (c) 2017 Shenzhen O&M Cloud Co., Ltd. All rights reserved.
  */
-
 public class SelectPictrueAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
     /*拍照Key*/
     public final static String KEY_TAKE_PICTURE = "tabk_picture";

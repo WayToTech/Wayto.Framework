@@ -3,11 +3,13 @@ package com.wayto.android.function.uploadFileFuncation;
 import java.io.File;
 
 /**
- * @author hezhiWu
- * @version V1.0
- * @Package com.yunwei.frame.function.uploadFileFuncation
- * @Description:
- * @date 2017/2/8 15:06
+ * 文件上传协议接口
+ * <p>
+ * author: hezhiWu <wuhezhi007@gmail.com>
+ * version: V1.0
+ * created at 2017/3/14 10:26
+ * <p>
+ * Copyright (c) 2017 Shenzhen O&M Cloud Co., Ltd. All rights reserved.
  */
 
 public interface UploadFileContract {
@@ -22,7 +24,7 @@ public interface UploadFileContract {
         void onUploadFialure(int code, String msg);
     }
 
-    interface Presenter{
+    interface Presenter {
         void uploadFileAction(File file);
     }
 }

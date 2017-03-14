@@ -18,13 +18,14 @@ import java.util.Iterator;
 import cn.jpush.android.api.JPushInterface;
 
 /**
- * @author hezhiWu
- * @version V1.0
- * @Package com.yunwei.frame.function.mainFuncations.missionModule.jpush
- * @Description:
- * @date 2017/2/9 17:53
+ * Jpush接收器
+ * <p>
+ * author: hezhiWu <wuhezhi007@gmail.com>
+ * version: V1.0
+ * created at 2017/3/14 10:36
+ * <p>
+ * Copyright (c) 2017 Shenzhen O&M Cloud Co., Ltd. All rights reserved.
  */
-
 public class JpushReceiver extends BroadcastReceiver {
     private final String TAG = getClass().getSimpleName();
 

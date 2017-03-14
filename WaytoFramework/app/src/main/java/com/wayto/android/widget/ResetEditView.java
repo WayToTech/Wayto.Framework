@@ -20,11 +20,13 @@ import butterknife.BindView;
 import butterknife.ButterKnife;
 
 /**
- * @author hezhiWu
- * @version V1.0
- * @Package com.yunwei.frame.widget
- * @Description:带重置内置的EditView
- * @date 2016/11/25 10:33
+ * 带重置内置的EditView
+ * <p>
+ * author: hezhiWu <wuhezhi007@gmail.com>
+ * version: V1.0
+ * created at 2017/3/14 10:15
+ * <p>
+ * Copyright (c) 2017 Shenzhen O&M Cloud Co., Ltd. All rights reserved.
  */
 
 public class ResetEditView extends LinearLayout implements TextWatcher, View.OnClickListener {

@@ -14,11 +14,13 @@ import com.baidu.trace.Trace;
 import java.util.Map;
 
 /**
- * @author hezhiWu
- * @version V1.0
- * @Package com.yunwei.baidu
- * @Description:百度鹰眼
- * @date 2016/8/15 12:49
+ * 百度鹰眼
+ * <p>
+ * author: hezhiWu <wuhezhi007@gmail.com>
+ * version: V1.0
+ * created at 2017/3/14 10:44
+ * <p>
+ * Copyright (c) 2017 Shenzhen O&M Cloud Co., Ltd. All rights reserved.
  */
 public class BaiduTrack {
     private final String TAG = "BaiduTrack";
@@ -59,13 +61,13 @@ public class BaiduTrack {
      */
     private static void initTrack(Context context) {
 //        if (client == null) {
-            client = new LBSTraceClient(context);
-            // 设置定位模式
-            client.setLocationMode(LocationMode.High_Accuracy);
-            client.setInterval(gatherInterval, packInterval);
+        client = new LBSTraceClient(context);
+        // 设置定位模式
+        client.setLocationMode(LocationMode.High_Accuracy);
+        client.setInterval(gatherInterval, packInterval);
 //        }
 //        if (trace == null) {
-            trace = new Trace(context, SERVICE_ID, ENTITY_NAME, traceType);
+        trace = new Trace(context, SERVICE_ID, ENTITY_NAME, traceType);
 //        }
     }
 
@@ -82,8 +84,8 @@ public class BaiduTrack {
                 Log.d(TAG, "startTrace onTraceCallBack arg0=" + arg0 + ", argl===" + arg1);
                 //开启服务失败，重新开启
                 if (0 == arg0 || 10006 == arg0 || 10008 == arg0 || 10009 == arg0) {
-                   Log.d(TAG,"服务开户成功!");
-                }else {
+                    Log.d(TAG, "服务开户成功!");
+                } else {
                     startTrace(context);
                 }
             }
@@ -179,20 +181,21 @@ public class BaiduTrack {
 
     /**
      * 查询里程
-     * @param serviceId 轨迹服务标识
-     * @param entityName entity标识
-     * @param isProcessed 是否返回纠偏后轨迹，轨迹纠偏功能包括去噪、抽稀、绑路三个步骤，可在process_option字段中设置使用哪几个步骤
-    0 : 否
-    1 : 是
+     *
+     * @param serviceId      轨迹服务标识
+     * @param entityName     entity标识
+     * @param isProcessed    是否返回纠偏后轨迹，轨迹纠偏功能包括去噪、抽稀、绑路三个步骤，可在process_option字段中设置使用哪几个步骤
+     *                       0 : 否
+     *                       1 : 是
      * @param processOption  纠偏选项，仅在is_processed=1时生效，通过为纠偏选项赋1（需要）或0（不需要）来设置是否需要该项数据处理，多选项设置时用英文逗号","分割，若不设置某选项则按默认值处理。
      * @param supplementMode 里程补充
      * @param startTime
      * @param endTime
      * @param listener
      */
-    public void queryDistance(Activity activity,long serviceId, String entityName, int isProcessed, String processOption, String supplementMode, int startTime, int endTime, OnTrackListener listener){
+    public void queryDistance(Activity activity, long serviceId, String entityName, int isProcessed, String processOption, String supplementMode, int startTime, int endTime, OnTrackListener listener) {
         initTrack(activity);
-        client.queryDistance(serviceId,entityName,isProcessed,processOption,supplementMode,startTime,endTime,listener);
+        client.queryDistance(serviceId, entityName, isProcessed, processOption, supplementMode, startTime, endTime, listener);
     }
 
     public void destroy() {

@@ -28,11 +28,13 @@ import com.wayto.map.entity.Gps;
 import com.wayto.map.utils.IPositionUtil;
 
 /**
- * @author hezhiWu
- * @version V1.0
- * @Package com.yunwei.frame.service
- * @Description:监控服务 高德定位回调 设置前台服务提高进程的级别
- * @date 2016/12/1 20:54
+ * 监控服务 高德定位回调 设置前台服务提高进程的级别
+ * <p>
+ * author: hezhiWu <wuhezhi007@gmail.com>
+ * version: V1.0
+ * created at 2017/3/14 10:22
+ * <p>
+ * Copyright (c) 2017 Shenzhen O&M Cloud Co., Ltd. All rights reserved.
  */
 
 public class MonitorService extends Service implements AMapLocationListener {

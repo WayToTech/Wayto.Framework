@@ -5,9 +5,9 @@ import android.text.TextUtils;
 import com.google.gson.Gson;
 import com.wayto.android.base.DataApplication;
 import com.wayto.android.common.Constant;
-import com.wayto.android.entity.Image;
+import com.wayto.android.entity.ImageEntity;
 import com.wayto.android.entity.ResponseModel;
-import com.wayto.android.entity.Video;
+import com.wayto.android.entity.VideoEntity;
 import com.wayto.android.function.pollingFuncation.PollingManage;
 import com.wayto.android.function.uploadFileFuncation.UploadFileManager;
 import com.wayto.android.db.UploadingTable;
@@ -29,11 +29,11 @@ import retrofit2.Callback;
 import retrofit2.Response;
 
 /**
- * @author hezhiWu
- * @version V1.0
- * @Package com.yunwei.frame.function.pollingFuncation.data.source
- * @Description:轮询上传业务类
- * @date 2017/1/20 17:24
+ * author: hezhiWu <wuhezhi007@gmail.com>
+ * version: V1.0
+ * created at 2017/3/14 10:29
+ * <p>
+ * Copyright (c) 2017 Shenzhen O&M Cloud Co., Ltd. All rights reserved.
  */
 
 public class PollingRemoteRepo implements PollingDataSource {
@@ -54,6 +54,7 @@ public class PollingRemoteRepo implements PollingDataSource {
 
     /**
      * 插入工作记录表【WorkRecordTable】
+     *
      * @param table
      * @param callBack
      */
@@ -82,6 +83,7 @@ public class PollingRemoteRepo implements PollingDataSource {
 
     /**
      * 查询工作记录表【WorkRecordTable】
+     *
      * @param callBack
      */
     @Override
@@ -100,6 +102,7 @@ public class PollingRemoteRepo implements PollingDataSource {
 
     /**
      * 查询上传表【UploadingTable】
+     *
      * @param callBack
      */
     @Override
@@ -115,6 +118,7 @@ public class PollingRemoteRepo implements PollingDataSource {
 
     /**
      * 上传
+     *
      * @param entity
      * @param callBack
      */
@@ -140,6 +144,7 @@ public class PollingRemoteRepo implements PollingDataSource {
 
     /**
      * 删除上传记录
+     *
      * @param entity
      */
     @Override
@@ -149,6 +154,7 @@ public class PollingRemoteRepo implements PollingDataSource {
 
     /**
      * 更新工作记录表【WorkRecordTable】
+     *
      * @param table
      */
     @Override
@@ -158,6 +164,7 @@ public class PollingRemoteRepo implements PollingDataSource {
 
     /**
      * 插入上传表【WorkRecordTable】
+     *
      * @param table
      */
     @Override
@@ -167,6 +174,7 @@ public class PollingRemoteRepo implements PollingDataSource {
 
     /**
      * 修改任务状态【UploadingTable】
+     *
      * @param missionId
      * @param missionPointId
      */
@@ -205,11 +213,11 @@ public class PollingRemoteRepo implements PollingDataSource {
                 String body = entity.getBody();
                 if (IMAGE_FLAG.equals(flag)) {
                     entity.setImageUrl("");
-                    List<Image> imags = IUtil.convertStringListToImgList(urls);
+                    List<ImageEntity> imags = IUtil.convertStringListToImgList(urls);
                     body = body.replaceAll("\"" + PollingManage.DEFULT_IMAGE_FORMAT + "\"", new Gson().toJson(imags));
                 } else if (VIDEO_FLAG.equals(flag)) {
                     entity.setVideoUrl("");
-                    List<Video> videos = IUtil.convertStringListToVideoList(urls);
+                    List<VideoEntity> videos = IUtil.convertStringListToVideoList(urls);
                     body = body.replaceAll("\"" + PollingManage.DEFULT_VIDEO_FORMAT + "\"", new Gson().toJson(videos));
                 } else if (AUDIO_FLAG.equals(flag)) {
                     entity.setAudioUrl("");

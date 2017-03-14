@@ -10,18 +10,19 @@ import com.wayto.android.function.mainFuncations.recordModule.fragment.MaintainR
 import com.wayto.android.function.mainFuncations.recordModule.fragment.MissionRecordFragment;
 
 /**
- * @author hezhiWu
- * @version V1.0
- * @Package com.yunwei.frame.function.mainFuncations.recordFuncation
- * @Description:历史记录ViewPager adapter
- * @date 2016/12/7 13:55
+ * 历史记录ViewPager adapter
+ * <p>
+ * author: hezhiWu <wuhezhi007@gmail.com>
+ * version: V1.0
+ * created at 2017/3/14 10:35
+ * <p>
+ * Copyright (c) 2017 Shenzhen O&M Cloud Co., Ltd. All rights reserved.
  */
-
 public class RecordViewPagerAdapter extends FragmentPagerAdapter {
-    private final int TAB_MISSION=0;
-    private final int TAB_DEVICE=1;
-    private final int TAB_HIDDEN=2;
-    private final int TAB_MAINTAIN=3;
+    private final int TAB_MISSION = 0;
+    private final int TAB_DEVICE = 1;
+    private final int TAB_HIDDEN = 2;
+    private final int TAB_MAINTAIN = 3;
 
     private int tabNumbers;
 
@@ -36,19 +37,19 @@ public class RecordViewPagerAdapter extends FragmentPagerAdapter {
 
     @Override
     public Fragment getItem(int position) {
-        Fragment fragment=null;
-        switch (position){
+        Fragment fragment = null;
+        switch (position) {
             case TAB_MISSION:
-                fragment=new MissionRecordFragment();
+                fragment = new MissionRecordFragment();
                 break;
             case TAB_DEVICE:
-                fragment=new DeviceRecordFragment();
+                fragment = new DeviceRecordFragment();
                 break;
             case TAB_HIDDEN:
-                fragment=new HiddenRecordFragment();
+                fragment = new HiddenRecordFragment();
                 break;
             case TAB_MAINTAIN:
-                fragment=new MaintainRecordFragment();
+                fragment = new MaintainRecordFragment();
                 break;
         }
         return fragment;

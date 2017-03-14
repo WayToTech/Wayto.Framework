@@ -10,11 +10,13 @@ import java.util.Arrays;
 import java.util.List;
 
 /**
- * @author hezhiWu
- * @version V1.0
- * @Package com.yunwei.water.ui.activity
- * @Description:电量上传Presenter
- * @date 2016/12/27 9:19
+ * 电量上传Presenter
+ * <p>
+ * author: hezhiWu <wuhezhi007@gmail.com>
+ * version: V1.0
+ * created at 2017/3/14 10:40
+ * <p>
+ * Copyright (c) 2017 Shenzhen O&M Cloud Co., Ltd. All rights reserved.
  */
 
 public class BatteryPresenter implements BatteryContract.Presenter {

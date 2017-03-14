@@ -14,11 +14,13 @@ import com.wayto.android.function.mainFuncations.MainActivity;
 import static android.content.Context.NOTIFICATION_SERVICE;
 
 /**
- * @author hezhiWu
- * @version V1.0
- * @Package com.yunwei.frame.utils
- * @Description:Notification 工具类
- * @date 2016/12/5 15:44
+ * Notification 工具类
+ * <p>
+ * author: hezhiWu <wuhezhi007@gmail.com>
+ * version: V1.0
+ * created at 2017/3/14 10:21
+ * <p>
+ * Copyright (c) 2017 Shenzhen O&M Cloud Co., Ltd. All rights reserved.
  */
 
 public class NotificationUtil {
@@ -43,7 +45,7 @@ public class NotificationUtil {
     /**
      * 发送提示消息
      */
-    public static void sendShowMessageNotification(String context,String ticker) {
+    public static void sendShowMessageNotification(String context, String ticker) {
         NotificationManager mNotificationManager = (NotificationManager) DataApplication.getInstance().getSystemService(NOTIFICATION_SERVICE);
         NotificationCompat.Builder mBuilder = new NotificationCompat.Builder(DataApplication.getInstance());
         mBuilder.setContentTitle(IUtil.getStrToRes(R.string.app_name))

@@ -18,13 +18,14 @@ import com.wayto.android.utils.ISystemUtil;
 import java.io.File;
 
 /**
- * @author hezhiWu
- * @version V1.0
- * @Package com.yunwei.cmcc.ui.mainFunctions.mineModule
- * @Description:App版本检测Presenter
- * @date 2016/11/17 11:08
+ * App版本检测Presenter
+ * <p>
+ * author: hezhiWu <wuhezhi007@gmail.com>
+ * version: V1.0
+ * created at 2017/3/14 10:37
+ * <p>
+ * Copyright (c) 2017 Shenzhen O&M Cloud Co., Ltd. All rights reserved.
  */
-
 public class CheckAppVersionPresenter implements CheckAppVersionDataSource.CheckAppVersionCallBack, CheckAppVersionDataSource.DownloadCallBack, CheckAppVersionContract.Presenter {
 
     private CheckAppVersionDataSource mRepo;

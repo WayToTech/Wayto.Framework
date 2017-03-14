@@ -14,11 +14,13 @@ import retrofit2.Callback;
 import retrofit2.Response;
 
 /**
- * @author hezhiWu
- * @version V1.0
- * @Package com.yunwei.frame.function.uploadFileFuncation.data.source
- * @Description:
- * @date 2017/2/8 15:11
+ * 文件上传业务处理类
+ * <p>
+ * author: hezhiWu <wuhezhi007@gmail.com>
+ * version: V1.0
+ * created at 2017/3/14 10:27
+ * <p>
+ * Copyright (c) 2017 Shenzhen O&M Cloud Co., Ltd. All rights reserved.
  */
 
 public class UploadFileRemoteRepo implements UploadFileDataSource {

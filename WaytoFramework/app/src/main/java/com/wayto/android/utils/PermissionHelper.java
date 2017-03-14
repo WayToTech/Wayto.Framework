@@ -7,11 +7,13 @@ import android.support.v4.app.ActivityCompat;
 import android.support.v4.content.ContextCompat;
 
 /**
- * @author hezhiWu
- * @version V1.0
- * @Package com.yunwei.frame.utils
- * @Description:权限请求类
- * @date 2017/1/9 14:15
+ * 权限请求类
+ * <p>
+ * author: hezhiWu <wuhezhi007@gmail.com>
+ * version: V1.0
+ * created at 2017/3/14 10:21
+ * <p>
+ * Copyright (c) 2017 Shenzhen O&M Cloud Co., Ltd. All rights reserved.
  */
 
 public class PermissionHelper {
@@ -22,7 +24,7 @@ public class PermissionHelper {
      * @param permission
      * @return
      */
-    public static boolean checkPermission(Activity activity, String permission,int requestCode) {
+    public static boolean checkPermission(Activity activity, String permission, int requestCode) {
         if (Build.VERSION.SDK_INT >= 23) {
             int permissionName = ContextCompat.checkSelfPermission(activity, permission);
             if (permissionName != PackageManager.PERMISSION_GRANTED) {

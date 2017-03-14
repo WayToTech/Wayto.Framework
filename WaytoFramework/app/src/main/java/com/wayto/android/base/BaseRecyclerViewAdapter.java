@@ -13,11 +13,13 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * @author huangyue
- * @version V1.0
- * @Package com.yunwei.water.ui.activity.history.adapter
- * @Description:RecyclerView.Adapter基类
- * @date 2016/10/09 17:04
+ * RecyclerView.Adapter基类
+ * <p>
+ * author: hezhiWu <wuhezhi007@gmail.com>
+ * version: V1.0
+ * created at 2017/3/14 10:12
+ * <p>
+ * Copyright (c) 2017 Shenzhen O&M Cloud Co., Ltd. All rights reserved.
  */
 
 public abstract class BaseRecyclerViewAdapter<T> extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
@@ -219,6 +221,7 @@ public abstract class BaseRecyclerViewAdapter<T> extends RecyclerView.Adapter<Re
 
     /**
      * 设置是否加载更多
+     *
      * @param loadMore
      */
     public void setLoadMore(boolean loadMore) {

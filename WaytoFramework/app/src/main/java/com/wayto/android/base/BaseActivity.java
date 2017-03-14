@@ -33,11 +33,13 @@ import org.greenrobot.eventbus.Subscribe;
 import org.greenrobot.eventbus.ThreadMode;
 
 /**
- * @author hezhiWu
- * @version V1.0
- * @Package com.yunwei.frame.base
- * @Description:基类Activity
- * @date 2016/11/22 14:57
+ * 基类Activity
+ * <p>
+ * author: hezhiWu <wuhezhi007@gmail.com>
+ * version: V1.0
+ * created at 2017/3/14 10:09
+ * <p>
+ * Copyright (c) 2017 Shenzhen O&M Cloud Co., Ltd. All rights reserved.
  */
 
 public abstract class BaseActivity extends AppCompatActivity {
@@ -106,7 +108,7 @@ public abstract class BaseActivity extends AppCompatActivity {
     }
 
     private void init() {
-        //实例化Activity侧滑Finish()
+        /*实例化Activity侧滑Finish()*/
         swipeBackLayout = new SwipeBackLayout(this);
         swipeBackLayout.replaceLayer(this);
 
@@ -174,13 +176,23 @@ public abstract class BaseActivity extends AppCompatActivity {
         mLinearLayoutContent.addView(view, lp);
     }
 
+    /**
+     * 子线程回调
+     *
+     * @param event
+     */
     @Subscribe(threadMode = ThreadMode.BACKGROUND)
-    public void onBackGroundUserEvent(NoticeEvent event) {
+    public void onSubThreedEvent(NoticeEvent event) {
 
     }
 
+    /**
+     * 主线程回调
+     *
+     * @param event
+     */
     @Subscribe(threadMode = ThreadMode.MAIN)
-    public void onMainUserEvent(NoticeEvent event) {
+    public void onMainThreedEvent(NoticeEvent event) {
 
     }
 

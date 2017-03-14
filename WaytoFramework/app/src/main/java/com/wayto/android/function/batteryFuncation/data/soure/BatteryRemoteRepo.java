@@ -10,11 +10,13 @@ import retrofit2.Callback;
 import retrofit2.Response;
 
 /**
- * @author hezhiWu
- * @version V1.0
- * @Package com.yunwei.water.ui.activity.data.soure
- * @Description:电量上传Remote
- * @date 2016/12/27 9:15
+ * 电量上传Remote
+ * <p>
+ * author: hezhiWu <wuhezhi007@gmail.com>
+ * version: V1.0
+ * created at 2017/3/14 10:40
+ * <p>
+ * Copyright (c) 2017 Shenzhen O&M Cloud Co., Ltd. All rights reserved.
  */
 
 public class BatteryRemoteRepo implements BatteryDataSouce {

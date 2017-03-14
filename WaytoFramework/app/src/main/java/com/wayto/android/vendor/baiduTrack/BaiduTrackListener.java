@@ -1,11 +1,13 @@
 package com.wayto.android.vendor.baiduTrack;
 
 /**
- * @author hezhiWu
- * @version V1.0
- * @Package com.yunwei.baidu
- * @Description:历史记录查询回调接口
- * @date 2016/9/23 10:32
+ * 历史记录查询回调接口
+ * <p>
+ * author: hezhiWu <wuhezhi007@gmail.com>
+ * version: V1.0
+ * created at 2017/3/14 10:44
+ * <p>
+ * Copyright (c) 2017 Shenzhen O&M Cloud Co., Ltd. All rights reserved.
  */
 public interface BaiduTrackListener {
 

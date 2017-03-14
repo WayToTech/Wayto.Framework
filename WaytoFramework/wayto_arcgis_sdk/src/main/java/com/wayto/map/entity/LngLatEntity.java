@@ -3,6 +3,12 @@ package com.wayto.map.entity;
 
 /**
  * 原始GPS经过点阵纠偏后的经纬度
+ * <p>
+ * author: hezhiWu <wuhezhi007@gmail.com>
+ * version: V1.0
+ * created at 2017/3/14 10:48
+ * <p>
+ * Copyright (c) 2017 Shenzhen O&M Cloud Co., Ltd. All rights reserved.
  */
 public class LngLatEntity {
     private double LNG;

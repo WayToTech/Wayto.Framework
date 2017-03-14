@@ -8,12 +8,13 @@ import android.widget.Toast;
 import com.wayto.android.utils.ILog;
 
 /**
- * @Package: com.yunwei.zaina.common.dialog
- * @Description:Toast 消息提示
- * @author: Aaron
- * @date: 2016-06-08
- * @Time: 09:22
- * @version: V1.0
+ * Toast工具类
+ * <p>
+ * author: hezhiWu <wuhezhi007@gmail.com>
+ * version: V1.0
+ * created at 2017/3/14 10:13
+ * <p>
+ * Copyright (c) 2017 Shenzhen O&M Cloud Co., Ltd. All rights reserved.
  */
 public class ToastUtil {
 

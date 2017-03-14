@@ -6,6 +6,12 @@ import android.widget.ImageView;
 
 /**
  * 图片尺寸设置
+ * <p>
+ * author: hezhiWu <wuhezhi007@gmail.com>
+ * version: V1.0
+ * created at 2017/3/14 10:16
+ * <p>
+ * Copyright (c) 2017 Shenzhen O&M Cloud Co., Ltd. All rights reserved.
  */
 public class PhotoAlbumImageView extends ImageView {
     private OnMeasureListener onMeasureListener;

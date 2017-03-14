@@ -9,13 +9,14 @@ import com.wayto.android.base.DataApplication;
 import com.wayto.android.receiver.PollingReceiver;
 
 /**
- * @author hezhiWu
- * @version V1.0
- * @Package com.yunwei.gas.utils
- * @Description:轮询工具类
- * @date 2016/12/1 15:09
+ * 轮询工具类
+ * <p>
+ * author: hezhiWu <wuhezhi007@gmail.com>
+ * version: V1.0
+ * created at 2017/3/14 10:22
+ * <p>
+ * Copyright (c) 2017 Shenzhen O&M Cloud Co., Ltd. All rights reserved.
  */
-
 public class PollingUtils {
     /**
      * 开户轮询

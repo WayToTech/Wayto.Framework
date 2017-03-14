@@ -3,12 +3,13 @@ package com.wayto.map.utils;
 import android.util.Log;
 
 /**
- * @Package: com.jinggan.dear.utils
- * @Description: 日志工具类
- * @author: Aaron
- * @date: 2015-11-19
- * @Time: 15:13
- * @version: V1.0
+ * 日志工具类
+ * <p>
+ * author: hezhiWu <wuhezhi007@gmail.com>
+ * version: V1.0
+ * created at 2017/3/14 10:47
+ * <p>
+ * Copyright (c) 2017 Shenzhen O&M Cloud Co., Ltd. All rights reserved.
  */
 public class MLog {
 
@@ -24,7 +25,7 @@ public class MLog {
      * 安全级别日志,true:不输出或保存日志，false:可输出或保存日志
      */
 //    public static boolean IS_SECURITY_LOG = IConfigConstant.LOG_SWITCH;
-    public static boolean IS_SECURITY_LOG =true;
+    public static boolean IS_SECURITY_LOG = true;
     /**
      * 是否输出Log的位置，true:输出；false:不输出
      */

@@ -30,11 +30,13 @@ import butterknife.BindView;
 import butterknife.ButterKnife;
 
 /**
- * @author hezhiWu
- * @version V1.0
- * @Package com.yunwei.frame.function.deviceFuncations.picture
- * @Description:图片查看类
- * @date 2017/1/4 16:23
+ * 图片查看类
+ * <p>
+ * author: hezhiWu <wuhezhi007@gmail.com>
+ * version: V1.0
+ * created at 2017/3/14 10:30
+ * <p>
+ * Copyright (c) 2017 Shenzhen O&M Cloud Co., Ltd. All rights reserved.
  */
 
 public class ShowPictureActivity extends BaseActivity implements ViewPager.OnPageChangeListener {

@@ -12,11 +12,13 @@ import com.wayto.android.base.BaseFragment;
 import butterknife.ButterKnife;
 
 /**
- * @author hezhiWu
- * @version V1.0
- * @Package com.yunwei.frame.function.mainFuncations.homeFuncation
- * @Description:足迹主界面
- * @date 2016/11/22 18:12
+ * 足迹界面
+ * <p>
+ * author: hezhiWu <wuhezhi007@gmail.com>
+ * version: V1.0
+ * created at 2017/3/14 10:33
+ * <p>
+ * Copyright (c) 2017 Shenzhen O&M Cloud Co., Ltd. All rights reserved.
  */
 
 public class TrackFragment extends BaseFragment {

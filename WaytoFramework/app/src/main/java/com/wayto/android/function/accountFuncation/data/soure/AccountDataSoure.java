@@ -6,11 +6,11 @@ import com.wayto.android.function.accountFuncation.data.UserInfoEntity;
 import com.wayto.android.base.BaseDataSourse;
 
 /**
- * @author hezhiWu
- * @version V1.0
- * @Package com.yunwei.frame.function.account.data.soure
- * @Description:
- * @date 2016/11/29 15:02
+ * author: hezhiWu <wuhezhi007@gmail.com>
+ * version: V1.0
+ * created at 2017/3/14 10:11
+ * <p>
+ * Copyright (c) 2017 Shenzhen O&M Cloud Co., Ltd. All rights reserved.
  */
 
 public interface AccountDataSoure extends BaseDataSourse {

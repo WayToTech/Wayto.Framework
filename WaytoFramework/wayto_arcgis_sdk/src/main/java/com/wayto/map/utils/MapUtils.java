@@ -3,11 +3,13 @@ package com.wayto.map.utils;
 import android.location.Location;
 
 /**
- * @author hezhiWu
- * @version V1.0
- * @Package com.yunwei.map.utils
- * @Description: 地图上常用工具
- * @date 2016/8/4 15:57
+ * 地图上常用工具
+ * <p>
+ * author: hezhiWu <wuhezhi007@gmail.com>
+ * version: V1.0
+ * created at 2017/3/14 10:47
+ * <p>
+ * Copyright (c) 2017 Shenzhen O&M Cloud Co., Ltd. All rights reserved.
  */
 public class MapUtils {
 

@@ -21,11 +21,13 @@ import com.wayto.android.vendor.qiniu.QiNiuConfig;
 import cn.jpush.android.api.JPushInterface;
 
 /**
- * @author hezhiWu
- * @version V1.0
- * @Package com.yunwei.android.base
- * @Description:Application类
- * @date 2016/11/22 14:59
+ * Application全局类
+ * <p>
+ * author: hezhiWu <wuhezhi007@gmail.com>
+ * version: V1.0
+ * created at 2017/3/14 10:12
+ * <p>
+ * Copyright (c) 2017 Shenzhen O&M Cloud Co., Ltd. All rights reserved.
  */
 
 public class DataApplication extends Application {

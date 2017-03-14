@@ -18,12 +18,13 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * @Package: com.yunwei.zaina.widget
- * @Description:附件控件
- * @author: Aaron
- * @date: 2016-06-14
- * @Time: 18:50
- * @version: V1.0
+ * 附件控件
+ * <p>
+ * author: hezhiWu <wuhezhi007@gmail.com>
+ * version: V1.0
+ * created at 2017/3/14 10:15
+ * <p>
+ * Copyright (c) 2017 Shenzhen O&M Cloud Co., Ltd. All rights reserved.
  */
 public class AccessoryView extends LinearLayout implements AdapterView.OnItemClickListener {
     /*默认图片数量*/

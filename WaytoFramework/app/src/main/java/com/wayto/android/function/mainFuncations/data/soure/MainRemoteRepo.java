@@ -11,11 +11,11 @@ import retrofit2.Callback;
 import retrofit2.Response;
 
 /**
- * @author hezhiWu
- * @version V1.0
- * @Package com.yunwei.frame.function.mainFuncations.data.soure
- * @Description:
- * @date 2016/11/30 13:59
+ * author: hezhiWu <wuhezhi007@gmail.com>
+ * version: V1.0
+ * created at 2017/3/14 10:38
+ * <p>
+ * Copyright (c) 2017 Shenzhen O&M Cloud Co., Ltd. All rights reserved.
  */
 
 public class MainRemoteRepo implements MainDataSource {
@@ -37,7 +37,7 @@ public class MainRemoteRepo implements MainDataSource {
             @Override
             public void onResponse(Call<ResponseModel<QiNiuTokenEntity>> call, Response<ResponseModel<QiNiuTokenEntity>> response) {
                 if (response.code() == Constant.HTTP_SUCESS_CODE) {
-                    ILog.d(TAG,response.body().getData().getToken());
+                    ILog.d(TAG, response.body().getData().getToken());
                     callBack.getQiNiuTokenSuccess(response.body().getData().getToken());
                 }
             }

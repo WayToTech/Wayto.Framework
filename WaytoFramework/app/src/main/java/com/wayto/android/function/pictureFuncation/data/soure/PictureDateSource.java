@@ -5,13 +5,14 @@ import com.wayto.android.function.pictureFuncation.data.PictureEntity;
 import java.util.List;
 
 /**
- * @author hezhiWu
- * @version V1.0
- * @Package com.yunwei.frame.function.pictureFuncation.data.soure
- * @Description:
- * @date 2016/12/29 11:35
- */
-
+ *
+ * 
+ * author: hezhiWu <wuhezhi007@gmail.com>
+ * version: V1.0
+ * created at 2017/3/14 10:32
+ * <p>
+ * Copyright (c) 2017 Shenzhen O&M Cloud Co., Ltd. All rights reserved.
+*/
 public interface PictureDateSource {
 
     interface QueryAlbumCallBack {

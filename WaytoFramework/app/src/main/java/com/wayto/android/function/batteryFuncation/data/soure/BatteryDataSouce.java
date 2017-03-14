@@ -4,13 +4,12 @@ import com.wayto.android.base.BaseDataSourse;
 import com.wayto.android.function.batteryFuncation.data.BatteryEntity;
 
 /**
- * @author hezhiWu
- * @version V1.0
- * @Package com.yunwei.water.ui.activity.data.soure
- * @Description:
- * @date 2016/12/27 9:12
+ * author: hezhiWu <wuhezhi007@gmail.com>
+ * version: V1.0
+ * created at 2017/3/14 10:40
+ * <p>
+ * Copyright (c) 2017 Shenzhen O&M Cloud Co., Ltd. All rights reserved.
  */
-
 public interface BatteryDataSouce extends BaseDataSourse {
 
     void uploadBattery(BatteryEntity body);

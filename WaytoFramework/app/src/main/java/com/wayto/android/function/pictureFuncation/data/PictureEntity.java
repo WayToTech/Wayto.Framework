@@ -3,13 +3,14 @@ package com.wayto.android.function.pictureFuncation.data;
 import java.io.Serializable;
 
 /**
- * @author hezhiWu
- * @version V1.0
- * @Package com.yunwei.frame.function.pictureFuncation.data
- * @Description:选择图片实体类
- * @date 2016/12/29 11:29
+ * 选择图片实体类
+ * <p>
+ * author: hezhiWu <wuhezhi007@gmail.com>
+ * version: V1.0
+ * created at 2017/3/14 10:31
+ * <p>
+ * Copyright (c) 2017 Shenzhen O&M Cloud Co., Ltd. All rights reserved.
  */
-
 public class PictureEntity implements Serializable {
 
     private String url;

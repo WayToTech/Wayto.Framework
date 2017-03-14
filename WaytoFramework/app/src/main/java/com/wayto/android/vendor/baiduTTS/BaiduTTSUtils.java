@@ -20,11 +20,14 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * @description 百度语音合成工具类
- * @author yangdu
- * @date 16/6/22
- * @time 下午7:08
- **/
+ * 百度语音合成工具类
+ * <p>
+ * author: hezhiWu <wuhezhi007@gmail.com>
+ * version: V1.0
+ * created at 2017/3/14 10:42
+ * <p>
+ * Copyright (c) 2017 Shenzhen O&M Cloud Co., Ltd. All rights reserved.
+ */
 public class BaiduTTSUtils {
     public static SpeechSynthesizer mSpeechSynthesizer;
     private static String mTTSDirPath;
@@ -34,9 +37,9 @@ public class BaiduTTSUtils {
     private static final String TEXT_MODEL_NAME = "bd_etts_text.dat";
 
     private static final String LICENSE_FILE_NAME = "temp_license";
-    private static boolean INITED_PARAMETER=false;
-    private static Context context=null;
-    private static final String TAG="BaiduTTSUtils";
+    private static boolean INITED_PARAMETER = false;
+    private static Context context = null;
+    private static final String TAG = "BaiduTTSUtils";
 
     private static void initialEnv() {
         if (mTTSDirPath == null) {
@@ -65,7 +68,7 @@ public class BaiduTTSUtils {
      * @param dest
      */
     private static void copyFromAssetsToSdcard(boolean isCover, String source, String dest) {
-        if(context==null)return;
+        if (context == null) return;
         File file = new File(dest);
         if (isCover || (!isCover && !file.exists())) {
             InputStream is = null;
@@ -101,16 +104,18 @@ public class BaiduTTSUtils {
             }
         }
     }
+
     /**
      * 初始化语音合成参数，有三种模式：在线、离线、在线和离线结合，目前只测试了在线
+     *
      * @param APPId
      * @param APIKey
      * @param SecretKey
      * @param mode
      */
-    private static void initialTts(String APPId,String APIKey,String SecretKey,TtsMode mode) {
-        if(context==null){
-            ILog.e(TAG,"initialTts:context is null");
+    private static void initialTts(String APPId, String APIKey, String SecretKey, TtsMode mode) {
+        if (context == null) {
+            ILog.e(TAG, "initialTts:context is null");
             return;
         }
         mSpeechSynthesizer = SpeechSynthesizer.getInstance();
@@ -139,11 +144,13 @@ public class BaiduTTSUtils {
             mSpeechSynthesizer.setParam(SpeechSynthesizer.PARAM_SPEAKER, "0");
             mSpeechSynthesizer.initTts(mode);
         } else {
-            Toast.makeText(context,"auth failed",Toast.LENGTH_SHORT).show();
+            Toast.makeText(context, "auth failed", Toast.LENGTH_SHORT).show();
         }
     }
+
     /**
      * 合成语音
+     *
      * @param text
      * @param utteranceId
      * @return
@@ -158,25 +165,27 @@ public class BaiduTTSUtils {
 
     /**
      * 百度语音文字转换语音播报
+     *
      * @param mcontext
-     * @param text 要播报的文字
+     * @param text     要播报的文字
      */
-    public static void speak(Context mcontext,String text) {
-        context=mcontext;
-        if(INITED_PARAMETER==false){
+    public static void speak(Context mcontext, String text) {
+        context = mcontext;
+        if (INITED_PARAMETER == false) {
             initialEnv();
-            initialTts(BuildConfig.BAIDUTTS_APP_ID,BuildConfig.BAIDUTTS_APP_KEY,BuildConfig.BAIDUTTS_SECRET_KEY,TtsMode.MIX);
-            INITED_PARAMETER=true;
+            initialTts(BuildConfig.BAIDUTTS_APP_ID, BuildConfig.BAIDUTTS_APP_KEY, BuildConfig.BAIDUTTS_SECRET_KEY, TtsMode.MIX);
+            INITED_PARAMETER = true;
         }
         int result = mSpeechSynthesizer.speak(text);
         if (result < 0) {
-            Toast.makeText(context,"error,please look up error code in doc or URL:http://yuyin.baidu.com/docs/tts/122 "
-                    ,Toast.LENGTH_SHORT).show();
+            Toast.makeText(context, "error,please look up error code in doc or URL:http://yuyin.baidu.com/docs/tts/122 "
+                    , Toast.LENGTH_SHORT).show();
         }
     }
 
     /**
      * 批量合成语音
+     *
      * @param mcontext
      * @param APPId
      * @param APIKey
@@ -185,44 +194,46 @@ public class BaiduTTSUtils {
      * @param texts
      */
     public static void batchSpeak(Context mcontext,
-                                  String APPId,String APIKey,String SecretKey,TtsMode mode,List<String> texts) {
-        if(INITED_PARAMETER==false){
+                                  String APPId, String APIKey, String SecretKey, TtsMode mode, List<String> texts) {
+        if (INITED_PARAMETER == false) {
             initialEnv();
-            initialTts(APPId,APIKey,SecretKey,mode);
-            INITED_PARAMETER=true;
+            initialTts(APPId, APIKey, SecretKey, mode);
+            INITED_PARAMETER = true;
         }
         List<SpeechSynthesizeBag> bags = new ArrayList<SpeechSynthesizeBag>();
-        if(texts==null||texts.size()<=0)return;
-        context=mcontext;
-        for(int i=0;i<texts.size();i++){
-            bags.add(getSpeechSynthesizeBag(APPId,APIKey,SecretKey,mode,texts.get(i), i+""));
+        if (texts == null || texts.size() <= 0) return;
+        context = mcontext;
+        for (int i = 0; i < texts.size(); i++) {
+            bags.add(getSpeechSynthesizeBag(APPId, APIKey, SecretKey, mode, texts.get(i), i + ""));
         }
         int result = mSpeechSynthesizer.batchSpeak(bags);
         if (result < 0) {
-            Toast.makeText(context,"error,please look up error code in doc or URL:http://yuyin.baidu.com/docs/tts/122 "
-                    ,Toast.LENGTH_SHORT).show();
+            Toast.makeText(context, "error,please look up error code in doc or URL:http://yuyin.baidu.com/docs/tts/122 "
+                    , Toast.LENGTH_SHORT).show();
         }
     }
+
     public static void pause() {
-        if(mSpeechSynthesizer==null)return;
+        if (mSpeechSynthesizer == null) return;
         mSpeechSynthesizer.pause();
     }
 
     public static void resume() {
-        if(mSpeechSynthesizer==null)return;
+        if (mSpeechSynthesizer == null) return;
         mSpeechSynthesizer.resume();
     }
 
     public static void stop() {
-        if(mSpeechSynthesizer==null)return;
+        if (mSpeechSynthesizer == null) return;
         mSpeechSynthesizer.stop();
     }
+
     public static void onDestroy() {
-        if(mSpeechSynthesizer!=null){
+        if (mSpeechSynthesizer != null) {
             mSpeechSynthesizer.release();
         }
-        mSpeechSynthesizer=null;
-        INITED_PARAMETER=false;
-        context=null;
+        mSpeechSynthesizer = null;
+        INITED_PARAMETER = false;
+        context = null;
     }
 }

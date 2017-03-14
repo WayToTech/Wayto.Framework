@@ -8,13 +8,12 @@ import com.wayto.android.function.mainFuncations.missionModule.MissionUnauditedF
 import com.wayto.android.function.mainFuncations.missionModule.MissionUntreatedFragment;
 
 /**
- * @author hezhiWu
- * @version V1.0
- * @Package com.yunwei.frame.function.mainFuncations.missionModule.adapter
- * @Description:
- * @date 2017/3/7 20:06
+ * author: hezhiWu <wuhezhi007@gmail.com>
+ * version: V1.0
+ * created at 2017/3/14 10:36
+ * <p>
+ * Copyright (c) 2017 Shenzhen O&M Cloud Co., Ltd. All rights reserved.
  */
-
 public class MissionViewPagerAdapter extends FragmentPagerAdapter {
     public static final int MISSION_UNTREATED = 0;/*待处理*/
     public static final int MISSION_UNAUDITED = 1;/*待审核*/

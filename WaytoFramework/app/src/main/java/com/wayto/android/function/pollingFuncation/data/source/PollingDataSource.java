@@ -6,11 +6,11 @@ import com.wayto.android.db.WorkRecordTable;
 import java.util.List;
 
 /**
- * @author hezhiWu
- * @version V1.0
- * @Package com.yunwei.frame.function.pollingFuncation.data.source
- * @Description:
- * @date 2017/1/20 17:09
+ * author: hezhiWu <wuhezhi007@gmail.com>
+ * version: V1.0
+ * created at 2017/3/14 10:29
+ * <p>
+ * Copyright (c) 2017 Shenzhen O&M Cloud Co., Ltd. All rights reserved.
  */
 
 public interface PollingDataSource {

@@ -56,12 +56,13 @@ import java.util.List;
 import java.util.Map;
 
 /**
- * @Package: com.yunwei.map.tiled.google
- * @Description:google地图图层下载Service
- * @author: Aaron
- * @date: 2016-06-01
- * @Time: 14:31
- * @version: V1.0
+ * google地图图层下载Service
+ * <p>
+ * author: hezhiWu <wuhezhi007@gmail.com>
+ * version: V1.0
+ * created at 2017/3/14 10:47
+ * <p>
+ * Copyright (c) 2017 Shenzhen O&M Cloud Co., Ltd. All rights reserved.
  */
 public class GoogleMapLayer extends TiledServiceLayer {
     private final String TAG = getClass().getSimpleName();

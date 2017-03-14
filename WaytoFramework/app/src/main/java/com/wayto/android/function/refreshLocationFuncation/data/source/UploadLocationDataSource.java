@@ -3,11 +3,11 @@ package com.wayto.android.function.refreshLocationFuncation.data.source;
 import com.wayto.android.function.refreshLocationFuncation.data.UploadLocationEntity;
 
 /**
- * @author hezhiWu
- * @version V1.0
- * @Package com.yunwei.frame.function.refreshLocationFuncation.data.source
- * @Description:
- * @date 2017/2/8 11:50
+ * author: hezhiWu <wuhezhi007@gmail.com>
+ * version: V1.0
+ * created at 2017/3/14 10:27
+ * <p>
+ * Copyright (c) 2017 Shenzhen O&M Cloud Co., Ltd. All rights reserved.
  */
 
 public interface UploadLocationDataSource {

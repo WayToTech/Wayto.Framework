@@ -43,11 +43,13 @@ import butterknife.ButterKnife;
 import butterknife.OnClick;
 
 /**
- * @author hezhiWu
- * @version V1.0
- * @Package com.yunwei.frame.function.mainFuncations.homeFuncation
- * @Description:我的主界面
- * @date 2016/11/22 18:12
+ * 我的主界面
+ * <p>
+ * author: hezhiWu <wuhezhi007@gmail.com>
+ * version: V1.0
+ * created at 2017/3/14 10:37
+ * <p>
+ * Copyright (c) 2017 Shenzhen O&M Cloud Co., Ltd. All rights reserved.
  */
 
 public class MineFragment extends BaseFragment implements CheckAppVersionContract.View, AccountContract.ModifyUearHeadView {
@@ -221,8 +223,8 @@ public class MineFragment extends BaseFragment implements CheckAppVersionContrac
     }
 
     @Override
-    public void onMainUserEvent(NoticeEvent event) {
-        super.onMainUserEvent(event);
+    public void onMainThreedEvent(NoticeEvent event) {
+        super.onMainThreedEvent(event);
         switch (event.getFlag()) {
             case EventConstant.UPDATE_USER_HEAD_KEY:
                 headPath = event.getObj().toString();

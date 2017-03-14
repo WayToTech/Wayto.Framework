@@ -21,6 +21,7 @@ import com.amap.api.location.AMapLocation;
 import com.esri.core.geometry.Point;
 import com.wayto.android.BuildConfig;
 import com.wayto.android.R;
+import com.wayto.android.base.BaseFragment;
 import com.wayto.android.common.Constant;
 import com.wayto.android.common.dialog.DialogFactory;
 import com.wayto.android.common.eventbus.EventConstant;
@@ -50,19 +51,21 @@ import com.wayto.map.utils.ILngLatMercator;
 
 import org.greenrobot.eventbus.EventBus;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
 
 /**
- * @author hezhiWu
- * @version V1.0
- * @Package com.yunwei.frame.function.mainFuncations
- * @Description:主界面
- * @date 2016/11/22 15:40
+ * 主界面
+ * <p>
+ * author: hezhiWu <wuhezhi007@gmail.com>
+ * version: V1.0
+ * created at 2017/3/14 10:33
+ * <p>
+ * Copyright (c) 2017 Shenzhen O&M Cloud Co., Ltd. All rights reserved.
  */
-
 public class MainActivity extends BaseActivity implements MainBottomNavigationBar.BottomTabSelectedListener, MainContract.MainView, CheckAppVersionContract.View {
     private final String TAG = getClass().getSimpleName();
 
@@ -72,6 +75,10 @@ public class MainActivity extends BaseActivity implements MainBottomNavigationBa
     private final int TAB_TRACK = 2;
     private final int TAB_RECORD = 3;
     private final int TAB_MINE = 4;
+    /*Bottom Tab 资源*/
+    private int[] tabIconRes;
+    private int[] tabNameRes;
+    private List<BaseFragment> tabModule = new ArrayList<>();
 
     @BindView(R.id.main_container_FrameLayout)
     FrameLayout mainContainerFl;
@@ -123,14 +130,12 @@ public class MainActivity extends BaseActivity implements MainBottomNavigationBa
     protected void onResume() {
         super.onResume();
         mapView.unpause();
-//        JPushInterface.onResume(this);
     }
 
     @Override
     protected void onPause() {
         super.onPause();
         mapView.pause();
-//        JPushInterface.onPause(this);
     }
 
     @Override
@@ -145,6 +150,8 @@ public class MainActivity extends BaseActivity implements MainBottomNavigationBa
      * 初始化
      */
     private void init() {
+        initBottomTabRes();
+
         mClientMessenger = new Messenger(mHandler);
         batteryReceiver = new PollingReceiver();
 
@@ -157,12 +164,37 @@ public class MainActivity extends BaseActivity implements MainBottomNavigationBa
     }
 
     /**
+     * 初始化Bottom Tab Module Res
+     * 如果要增加或者删除相应的模块，在对应的index添加或者删除,及修改@onTabSelected方法监听回调
+     */
+    private void initBottomTabRes() {
+        tabNameRes = new int[]{R.string.main_home_tab,
+                R.string.main_mission_tab,
+                R.string.main_track_tab,
+                R.string.main_record_tab,
+                R.string.main_mine_tab};
+        tabIconRes = new int[]{R.mipmap.icon_main_tab_home_pr,
+                R.mipmap.icon_main_tab_mission_pr,
+                R.mipmap.icon_main_tab_loc_pr,
+                R.mipmap.icon_main_tab_record_pr,
+                R.mipmap.icon_main_tab_mine_pr};
+
+        tabModule.add(HomeFragment.newInstance());
+        tabModule.add(MissionFragment.newInstance());
+        tabModule.add(TrackFragment.newInstance());
+        tabModule.add(RecordFragment.newInstance());
+        tabModule.add(MineFragment.newInstance());
+    }
+
+    /**
      * 初始化BottomNavigationBar
      */
     private void initBottomNavigationBar() {
         mainBottomNavigationBar.initConfig(this, R.id.main_container_FrameLayout);
-        mainBottomNavigationBar.addTabItem(R.mipmap.icon_main_tab_home_pr, R.string.main_home_tab).addTabItem(R.mipmap.icon_main_tab_mission_pr, R.string.main_mission_tab).addTabItem(R.mipmap.icon_main_tab_loc_pr, R.string.main_track_tab).addTabItem(R.mipmap.icon_main_tab_record_pr, R.string.main_record_tab).addTabItem(R.mipmap.icon_main_tab_mine_pr, R.string.main_mine_tab);
-        mainBottomNavigationBar.addFragment(HomeFragment.newInstance()).addFragment(MissionFragment.newInstance()).addFragment(TrackFragment.newInstance()).addFragment(RecordFragment.newInstance()).addFragment(MineFragment.newInstance());
+        for (int i = 0; i < tabIconRes.length; i++) {
+            mainBottomNavigationBar.addTabItem(tabIconRes[i], tabNameRes[i]);
+            mainBottomNavigationBar.addFragment(tabModule.get(i));
+        }
         mainBottomNavigationBar.setTabSelectedListener(this);
         mainBottomNavigationBar.setFirstSelectedTab(TAB_TRACK);
     }

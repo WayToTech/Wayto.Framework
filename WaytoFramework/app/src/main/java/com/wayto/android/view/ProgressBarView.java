@@ -20,7 +20,13 @@ import com.wayto.android.R;
 
 
 /**
- * Created by wuhezhi on 2015/12/6.
+ * 自定义进度条View
+ * <p>
+ * author: hezhiWu <wuhezhi007@gmail.com>
+ * version: V1.0
+ * created at 2017/3/14 10:17
+ * <p>
+ * Copyright (c) 2017 Shenzhen O&M Cloud Co., Ltd. All rights reserved.
  */
 public class ProgressBarView extends View {
     public ProgressBarView(Context context, AttributeSet attrs, int defStyleAttr) {

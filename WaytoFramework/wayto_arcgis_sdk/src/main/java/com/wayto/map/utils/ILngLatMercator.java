@@ -4,6 +4,13 @@ package com.wayto.map.utils;
 import com.wayto.map.entity.LngLatEntity;
 import com.wayto.map.entity.MPointEntity;
 
+/**
+ * author: hezhiWu <wuhezhi007@gmail.com>
+ * version: V1.0
+ * created at 2017/3/14 10:46
+ * <p>
+ * Copyright (c) 2017 Shenzhen O&M Cloud Co., Ltd. All rights reserved.
+ */
 public class ILngLatMercator {
     private static double a = 6378245.0;
     private static double ee = 0.00669342162296594323;

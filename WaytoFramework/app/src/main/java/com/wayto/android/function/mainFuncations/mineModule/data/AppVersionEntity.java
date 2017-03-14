@@ -3,14 +3,15 @@ package com.wayto.android.function.mainFuncations.mineModule.data;
 import java.io.Serializable;
 
 /**
- * @author hezhiWu
- * @version V1.0
- * @Package com.yunwei.cmcc.ui.mainFunctions.data
- * @Description:
- * @date 2016/11/17 10:51
+ * 我的主界面
+ * <p>
+ * author: hezhiWu <wuhezhi007@gmail.com>
+ * version: V1.0
+ * created at 2017/3/14 10:37
+ * <p>
+ * Copyright (c) 2017 Shenzhen O&M Cloud Co., Ltd. All rights reserved.
  */
-
-public class AppVersionEntity implements Serializable{
+public class AppVersionEntity implements Serializable {
 
     private int Ver;
     private String Note;
